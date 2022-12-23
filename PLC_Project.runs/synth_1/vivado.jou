@@ -2,11 +2,11 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Thu Dec 15 17:00:58 2022
-# Process ID: 10644
+# Start of session at: Fri Dec 23 17:44:51 2022
+# Process ID: 12500
 # Current directory: D:/PLC_Project/PLC_Project.runs/synth_1
-# Command line: vivado.exe -log Project.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Project.tcl
-# Log file: D:/PLC_Project/PLC_Project.runs/synth_1/Project.vds
+# Command line: vivado.exe -log accMult_4x4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source accMult_4x4.tcl
+# Log file: D:/PLC_Project/PLC_Project.runs/synth_1/accMult_4x4.vds
 # Journal file: D:/PLC_Project/PLC_Project.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source Project.tcl -notrace
+source accMult_4x4.tcl -notrace

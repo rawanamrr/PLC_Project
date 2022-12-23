@@ -1,6 +1,6 @@
 Vivado Simulator 2016.4
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: D:/Programs/Xillinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1ba1becea8d54226a7bdd09e5cea07b9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_project_behav xil_defaultlib.tb_project -log elaborate.log 
+Running: D:/Programs/Xillinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1ba1becea8d54226a7bdd09e5cea07b9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_accMult4x4_behav xil_defaultlib.tb_accMult4x4 -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -10,7 +10,9 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling architecture behavior of entity xil_defaultlib.Project [project_default]
-Compiling architecture behavioral of entity xil_defaultlib.tb_project
-Built simulation snapshot tb_project_behav
+Compiling architecture behavioral of entity xil_defaultlib.accMult_2x2 [accmult_2x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_4Bit [adder_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.accMult_4x4 [accmult_4x4_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_accmult4x4
+Built simulation snapshot tb_accMult4x4_behav

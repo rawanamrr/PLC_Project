@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log Project.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Project.tcl
+EAStep vivado -log accMult_4x4.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source accMult_4x4.tcl
