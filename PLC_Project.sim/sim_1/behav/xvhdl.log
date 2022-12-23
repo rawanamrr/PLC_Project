@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Project/Project.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Project
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/PLC_Project/PLC_Project.srcs/sim_1/new/tb_project.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_project
