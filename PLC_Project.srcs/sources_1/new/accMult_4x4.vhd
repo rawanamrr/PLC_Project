@@ -15,7 +15,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity accMult_4x4 is
     Port ( x : in STD_LOGIC_VECTOR (3 downto 0);
            y : in STD_LOGIC_VECTOR (3 downto 0);
-           res : out STD_LOGIC_VECTOR (8 downto 0));
+           res : out STD_LOGIC_VECTOR (7 downto 0));
 end accMult_4x4;
 
 architecture Behavioral of accMult_4x4 is
@@ -48,8 +48,8 @@ signal subL1: std_logic_vector(6 downto 0);
 signal subL2: std_logic_vector(7 downto 0);
 signal temp1,temp2: std_logic_vector(3 downto 0);
 signal sum1,sum2: std_logic_vector(3 downto 0);
-signal cout1,cout2: std_logic;
-signal res_sig: std_logic_vector(8 downto 0);
+signal cout1,cout2,cout3: std_logic;
+signal res_sig: std_logic_vector(7 downto 0);
 
 begin
 
@@ -72,7 +72,7 @@ subL2(5 downto 2)<=sum2;
 subL2(1 downto 0)<=subL1(1 downto 0);
 ----------------------------------------------------
 
-Adder4Bit_3: Adder_4bit port map(subL2(7 downto 4),P4,'0',res_sig(7 downto 4),res_sig(8));
+Adder4Bit_3: Adder_4bit port map(subL2(7 downto 4),P4,'0',res_sig(7 downto 4),cout3);
 res_sig(3 downto 0)<= subL2(3 downto 0);
 
 res<=res_sig;

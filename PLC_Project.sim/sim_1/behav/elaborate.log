@@ -10,6 +10,7 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
 Compiling architecture behavioral of entity xil_defaultlib.approxMult_2x2 [approxmult_2x2_default]
 Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
 Compiling architecture behavioral of entity xil_defaultlib.Adder_3bit [adder_3bit_default]
