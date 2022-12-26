@@ -1,13 +1,13 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-| Date         : Mon Dec 26 18:57:35 2022
-| Host         : DESKTOP-TO38104 running 64-bit major release  (build 9200)
-| Command      : report_utilization -file accMult_4x4_utilization_synth.rpt -pb accMult_4x4_utilization_synth.pb
-| Design       : accMult_4x4
+| Date         : Mon Dec 26 21:49:47 2022
+| Host         : DESKTOP-A1UH57N running 64-bit major release  (build 9200)
+| Command      : report_utilization -file accMult_8x8v1_utilization_synth.rpt -pb accMult_8x8v1_utilization_synth.pb
+| Design       : accMult_8x8v1
 | Device       : 7k70tfbv676-1
 | Design State : Synthesized
------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
 
 Utilization Design Information
 
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |   19 |     0 |     41000 |  0.05 |
-|   LUT as Logic          |   19 |     0 |     41000 |  0.05 |
+| Slice LUTs*             |  104 |     0 |     41000 |  0.25 |
+|   LUT as Logic          |  104 |     0 |     41000 |  0.25 |
 |   LUT as Memory         |    0 |     0 |     13400 |  0.00 |
 | Slice Registers         |    0 |     0 |     82000 |  0.00 |
 |   Register as Flip Flop |    0 |     0 |     82000 |  0.00 |
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   16 |     0 |       300 |  5.33 |
+| Bonded IOB                  |   32 |     0 |       300 | 10.67 |
 | Bonded IPADs                |    0 |     0 |        26 |  0.00 |
 | Bonded OPADs                |    0 |     0 |        16 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         6 |  0.00 |
@@ -151,13 +151,13 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     |   14 |                 LUT |
-| OBUF     |    8 |                  IO |
-| IBUF     |    8 |                  IO |
-| LUT4     |    4 |                 LUT |
-| LUT2     |    3 |                 LUT |
-| LUT5     |    2 |                 LUT |
-| LUT3     |    1 |                 LUT |
+| LUT6     |   69 |                 LUT |
+| LUT4     |   27 |                 LUT |
+| LUT5     |   20 |                 LUT |
+| OBUF     |   16 |                  IO |
+| IBUF     |   16 |                  IO |
+| LUT3     |    8 |                 LUT |
+| LUT2     |    6 |                 LUT |
 +----------+------+---------------------+
 
 

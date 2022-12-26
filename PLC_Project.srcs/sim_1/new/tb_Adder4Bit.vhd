@@ -58,5 +58,4 @@ x_sig<="00000001";y_sig<="00000010"; cin_sig<= '0'; wait for 10ns;
 x_sig<="00001100";y_sig<="00000100"; cin_sig<= '1'; wait ;
 end process;
 
-
 end Behavioral;
