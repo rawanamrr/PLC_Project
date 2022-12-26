@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1671810290">
-  <File Type="RDS-PROPCONSTRS" Name="accMult_4x4_drc_synth.rpt"/>
-  <File Type="PA-TCL" Name="accMult_4x4.tcl"/>
-  <File Type="RDS-RDS" Name="accMult_4x4.vds"/>
-  <File Type="RDS-UTIL" Name="accMult_4x4_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="accMult_4x4_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="accMult_4x4.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="accMult_4x4_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="accMult_4x4_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1672069780">
+  <File Type="RDS-PROPCONSTRS" Name="approxMult_4x4v2_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="approxMult_4x4v2.tcl"/>
+  <File Type="RDS-RDS" Name="approxMult_4x4v2.vds"/>
+  <File Type="RDS-UTIL" Name="approxMult_4x4v2_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="approxMult_4x4v2_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="approxMult_4x4v2.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="approxMult_4x4v2_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="approxMult_4x4v2_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/FA.vhd">
@@ -16,19 +16,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/accMult_2x2.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/Adder_4Bit.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/accMult_4x4.vhd">
+    <File Path="$PSRCDIR/sources_1/new/Adder_4bit.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -36,14 +24,39 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/approxMult_2x2.vhd">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Adder_3bit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/approxMult_4x4v2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/approxMult_4x4.vhd">
+      <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/latch.vhd">
+    <File Path="$PSRCDIR/sources_1/new/accMult_2x2.vhd">
       <FileInfo>
-        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/accMult_4x4.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -57,7 +70,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="accMult_4x4"/>
+      <Option Name="TopModule" Val="approxMult_4x4v2"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

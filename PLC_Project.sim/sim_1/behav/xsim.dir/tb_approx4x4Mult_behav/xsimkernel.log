@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_approx4x4Mult_behav/xsimk.exe -simmode gui -wdb tb_approx4x4Mult_behav.wdb -simrunnum 0 -socket 58964
+Design successfully loaded
+Design Loading Memory Usage: 8756 KB (Peak: 8756 KB)
+Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 9476 KB (Peak: 9476 KB)
+Simulation CPU Usage: 30 ms
