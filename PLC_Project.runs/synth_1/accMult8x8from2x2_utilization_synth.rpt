@@ -1,13 +1,13 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
----------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-| Date         : Mon Dec 26 21:49:47 2022
+| Date         : Tue Dec 27 05:36:30 2022
 | Host         : DESKTOP-A1UH57N running 64-bit major release  (build 9200)
-| Command      : report_utilization -file accMult_8x8v1_utilization_synth.rpt -pb accMult_8x8v1_utilization_synth.pb
-| Design       : accMult_8x8v1
+| Command      : report_utilization -file accMult8x8from2x2_utilization_synth.rpt -pb accMult8x8from2x2_utilization_synth.pb
+| Design       : accMult8x8from2x2
 | Device       : 7k70tfbv676-1
 | Design State : Synthesized
----------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
 
 Utilization Design Information
 
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  104 |     0 |     41000 |  0.25 |
-|   LUT as Logic          |  104 |     0 |     41000 |  0.25 |
+| Slice LUTs*             |   99 |     0 |     41000 |  0.24 |
+|   LUT as Logic          |   99 |     0 |     41000 |  0.24 |
 |   LUT as Memory         |    0 |     0 |     13400 |  0.00 |
 | Slice Registers         |    0 |     0 |     82000 |  0.00 |
 |   Register as Flip Flop |    0 |     0 |     82000 |  0.00 |
@@ -151,13 +151,13 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     |   69 |                 LUT |
-| LUT4     |   27 |                 LUT |
-| LUT5     |   20 |                 LUT |
+| LUT6     |   68 |                 LUT |
+| LUT5     |   18 |                 LUT |
 | OBUF     |   16 |                  IO |
+| LUT4     |   16 |                 LUT |
 | IBUF     |   16 |                  IO |
-| LUT3     |    8 |                 LUT |
-| LUT2     |    6 |                 LUT |
+| LUT3     |    9 |                 LUT |
+| LUT2     |    9 |                 LUT |
 +----------+------+---------------------+
 
 

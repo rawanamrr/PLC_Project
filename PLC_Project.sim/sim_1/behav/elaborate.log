@@ -16,5 +16,6 @@ Compiling architecture behavioral of entity xil_defaultlib.Adder_4bit [adder_4bi
 Compiling architecture behavioral of entity xil_defaultlib.accMult_4x4 [accmult_4x4_default]
 Compiling architecture behavioral of entity xil_defaultlib.Adder_8bit [adder_8bit_default]
 Compiling architecture behavioral of entity xil_defaultlib.accMult_8x8v1 [accmult_8x8v1_default]
+Compiling architecture behavioral of entity xil_defaultlib.accMult8x8from2x2 [accmult8x8from2x2_default]
 Compiling architecture behavioral of entity xil_defaultlib.tb_accmult_8x8
 Built simulation snapshot tb_accMult_8x8_behav

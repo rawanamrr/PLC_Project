@@ -1,13 +1,14 @@
-
-*** Running vivado
-    with args -log accMult8x8from2x2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source accMult8x8from2x2.tcl
-
-
-****** Vivado v2016.4 (64-bit)
-  **** SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
-  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Dec 27 05:36:13 2022
+# Process ID: 2548
+# Current directory: C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.runs/synth_1
+# Command line: vivado.exe -log accMult8x8from2x2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source accMult8x8from2x2.tcl
+# Log file: C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.runs/synth_1/accMult8x8from2x2.vds
+# Journal file: C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
 source accMult8x8from2x2.tcl -notrace
 Command: synth_design -top accMult8x8from2x2 -part xc7k70tfbv676-1
 Starting synth_design

@@ -31,7 +31,6 @@ component Adder_4bit is
            cin: in std_logic;
            sum_out : out STD_LOGIC_VECTOR (3 downto 0);
            cout: out std_logic);
-          
 end component;
 
 
