@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../PLC_Project.srcs/sources_1/new/FA.vhd"
+vhdl xil_defaultlib  "../../../PLC_Project.srcs/sources_1/new/Accurate.vhd"
+vhdl xil_defaultlib  "../../../PLC_Project.srcs/sources_1/new/Adder_16bit.vhd"
+vhdl xil_defaultlib  "../../../PLC_Project.srcs/sources_1/new/multiplieraccurate88.vhd"
+vhdl xil_defaultlib  "../../../PLC_Project.srcs/sim_1/new/multiplieraccurate88_tb.vhd"
+
+# Do not sort compile order
+nosort

@@ -2,17 +2,8 @@
 2016.4
 Dec 14 2016
 22:58:16
-C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sim_1/new/tb_accMult_16x16.vhd,1672153339,vhdl,,,,tb_accmult_16x16,,,,,,,,
+C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sim_1/new/multiplieraccurate88_tb.vhd,1672148215,vhdl,,,,multiplieraccurate88_tb,,,,,,,,
+C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Accurate.vhd,1672148215,vhdl,,,,accurate,,,,,,,,
 C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd,1672081004,vhdl,,,,adder_16bit,,,,,,,,
-C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd,1672071653,vhdl,,,,adder_3bit,,,,,,,,
-C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4Bit.vhd,1672071653,vhdl,,,,adder_4bit,,,,,,,,
-C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd,1672081004,vhdl,,,,adder_8bit,,,,,,,,
 C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd,1672071653,vhdl,,,,fa,,,,,,,,
-C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_16x16.vhd,1672150951,vhdl,,,,accmult_16x16,,,,,,,,
-C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_2x2.vhd,1672071653,vhdl,,,,accmult_2x2,,,,,,,,
-C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_4x4.vhd,1672096018,vhdl,,,,accmult_4x4,,,,,,,,
-C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_8x8v1.vhd,1672083624,vhdl,,,,accmult_8x8v1,,,,,,,,
-C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd,1672153221,vhdl,,,,approxmult_16x16,,,,,,,,
-C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd,1672071653,vhdl,,,,approxmult_2x2,,,,,,,,
-C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd,1672152171,vhdl,,,,approxmult_4x4,,,,,,,,
-C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd,1672152626,vhdl,,,,approxmult_8x8,,,,,,,,
+C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplieraccurate88.vhd,1672161633,vhdl,,,,multiplieraccurate88,,,,,,,,

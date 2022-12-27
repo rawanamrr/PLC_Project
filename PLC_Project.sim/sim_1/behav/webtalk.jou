@@ -2,10 +2,10 @@
 # Webtalk v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Tue Dec 27 17:04:00 2022
-# Process ID: 10284
+# Start of session at: Tue Dec 27 19:27:08 2022
+# Process ID: 13136
 # Current directory: C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.sim/sim_1/behav
-# Command line: wbtcv.exe -mode batch -source C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.sim/sim_1/behav/xsim.dir/tb_accMult_16x16_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.sim/sim_1/behav/xsim.dir/multiplieraccurate88_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.sim/sim_1/behav/webtalk.log
 # Journal file: C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.sim/sim_1/behav\webtalk.jou
 #-----------------------------------------------------------
