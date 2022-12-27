@@ -43,6 +43,11 @@ component accMult_8x8v1 is
            res : out STD_LOGIC_VECTOR (15 downto 0));
 end component;
 
+component approxMult_8x8 is
+    Port ( x : in STD_LOGIC_VECTOR (7 downto 0);
+           y : in STD_LOGIC_VECTOR (7 downto 0);
+           res : out STD_LOGIC_VECTOR (15 downto 0));
+end component;
 component accMult8x8from2x2 is
     Port ( x : in STD_LOGIC_VECTOR (7 downto 0);
            y : in STD_LOGIC_VECTOR (7 downto 0);
@@ -52,25 +57,24 @@ end component;
 
 
 signal x_sig,y_sig: STD_logic_vector (7 downto 0);
-signal res_sig: STD_logic_vector (15 downto 0);
+signal ACCURATE_sig,APPROXIMATE_sig: STD_logic_vector (15 downto 0);
 
-signal x_2_sig,y_2_sig: STD_logic_vector (7 downto 0);
-signal res_2_sig: STD_logic_vector (15 downto 0);
+
 
 begin
 
-eightfrom4: accMult_8x8v1 port map(x_sig,y_sig,res_sig);
-eightfrom2: accMult8x8from2x2 port map(x_2_sig,y_2_sig,res_2_sig);
+eightfrom4: accMult_8x8v1 port map(x_sig,y_sig,ACCURATE_sig);
+eightfrom4APPROX: approxMult_8x8 port map(x_sig,y_sig,APPROXIMATE_sig);
 
 hussien: process
 begin
 
-x_sig <= "00000000";y_sig <="00000000";x_2_sig <= "00000000";y_2_sig <="00000000"; wait for 10 ns;
-x_sig <= "11111111";y_sig <="11111111";x_2_sig <= "11111111";y_2_sig <="11111111"; wait for 10 ns;
-x_sig <= "11110000";y_sig <="00011000";x_2_sig <= "11110000";y_2_sig <="00011000"; wait for 10 ns;
-x_sig <= "01000001";y_sig <="00100010";x_2_sig <= "01000001";y_2_sig <="00100010"; wait for 10 ns;
-x_sig <= "00010000";y_sig <="00000010";x_2_sig <= "00010000";y_2_sig <="00000010"; wait for 10 ns;
-x_sig <= "01111100";y_sig <="11110010";x_2_sig <= "01111100";y_2_sig <="11110010"; wait;
+x_sig <= "00000000";y_sig <="00000000"; wait for 10 ns;
+x_sig <= "11111111";y_sig <="11111111";wait for 10 ns;
+x_sig <= "11110000";y_sig <="00011000"; wait for 10 ns;
+x_sig <= "01000001";y_sig <="00100010"; wait for 10 ns;
+x_sig <= "00010000";y_sig <="00000010";wait for 10 ns;
+x_sig <= "01111100";y_sig <="11110010"; wait;
 
 end process;
 

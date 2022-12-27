@@ -92,11 +92,10 @@ temp2<='0'&P3;
 Adder4Bit_1: Adder_4bit port map(temp2,subL1(5 downto 2),'0',subL2(5 downto 2),subL2(6));
 subL2(1 downto 0)<=subL1(1 downto 0);
 
-temp3<='0'&P4;
-Adder4Bit_2: Adder_4bit port map(temp3,subL2(6 downto 3),'0',res_sig(6 downto 3),res_sig(7));
-res_sig(2 downto 0)<=subL2(2 downto 0);
+
+Adder4Bit_2: Adder_3bit port map(P4,subL2(6 downto 4),'0',res_sig(6 downto 4),res_sig(7));
+res_sig(3 downto 0)<=subL2(3 downto 0);
 
 res<=res_sig;
-
 
 end Behavioral;

@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log accMult8x8from2x2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source accMult8x8from2x2.tcl
+EAStep vivado -log approxMult_16x16.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source approxMult_16x16.tcl

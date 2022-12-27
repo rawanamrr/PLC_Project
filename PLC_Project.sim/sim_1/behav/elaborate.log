@@ -1,6 +1,6 @@
 Vivado Simulator 2016.4
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: E:/Lab/Xillinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1ba1becea8d54226a7bdd09e5cea07b9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_accMult_8x8_behav xil_defaultlib.tb_accMult_8x8 -log elaborate.log 
+Running: E:/Lab/Xillinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1ba1becea8d54226a7bdd09e5cea07b9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_accMult_16x16_behav xil_defaultlib.tb_accMult_16x16 -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -16,6 +16,12 @@ Compiling architecture behavioral of entity xil_defaultlib.Adder_4bit [adder_4bi
 Compiling architecture behavioral of entity xil_defaultlib.accMult_4x4 [accmult_4x4_default]
 Compiling architecture behavioral of entity xil_defaultlib.Adder_8bit [adder_8bit_default]
 Compiling architecture behavioral of entity xil_defaultlib.accMult_8x8v1 [accmult_8x8v1_default]
-Compiling architecture behavioral of entity xil_defaultlib.accMult8x8from2x2 [accmult8x8from2x2_default]
-Compiling architecture behavioral of entity xil_defaultlib.tb_accmult_8x8
-Built simulation snapshot tb_accMult_8x8_behav
+Compiling architecture behavioral of entity xil_defaultlib.Adder_16bit [adder_16bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.accMult_16x16 [accmult_16x16_default]
+Compiling architecture behavioral of entity xil_defaultlib.approxMult_2x2 [approxmult_2x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_3bit [adder_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.approxMult_4x4 [approxmult_4x4_default]
+Compiling architecture behavioral of entity xil_defaultlib.approxMult_8x8 [approxmult_8x8_default]
+Compiling architecture behavioral of entity xil_defaultlib.approxMult_16x16 [approxmult_16x16_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_accmult_16x16
+Built simulation snapshot tb_accMult_16x16_behav

@@ -17,18 +17,22 @@ set_property ip_output_repo {c:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Pr
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
   {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd}
-  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd}
-  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_2x2.vhd}
+  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd}
+  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd}
   {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4bit.vhd}
-  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/accMult8x8from2x2.vhd}
+  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd}
+  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd}
+  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd}
+  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd}
+  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd}
 }
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
 
-synth_design -top accMult8x8from2x2 -part xc7k70tfbv676-1
+synth_design -top approxMult_16x16 -part xc7k70tfbv676-1
 
 
-write_checkpoint -force -noxdef accMult8x8from2x2.dcp
+write_checkpoint -force -noxdef approxMult_16x16.dcp
 
-catch { report_utilization -file accMult8x8from2x2_utilization_synth.rpt -pb accMult8x8from2x2_utilization_synth.pb }
+catch { report_utilization -file approxMult_16x16_utilization_synth.rpt -pb approxMult_16x16_utilization_synth.pb }
