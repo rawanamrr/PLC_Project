@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Desktop/project_1/project_1.srcs/sources_1/new/fulladder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fulladder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Desktop/project_1/project_1.srcs/sources_1/new/UDM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity UDM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Desktop/plc/plc.srcs/sources_1/new/Adder16Bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Adder16Bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Desktop/plc/plc.srcs/sources_1/new/multiplierapprox88.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity multiplierapprox88
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Desktop/plc/plc.srcs/sim_1/new/multiplierapprox88_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity multiplierapprox88_tb
