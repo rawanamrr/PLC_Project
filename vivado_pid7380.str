@@ -1,0 +1,121 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+Process ID: 7380
+
+Current time: 	12/27/22 1:50:13 PM EET
+Time zone: 	Eastern European Time (Africa/Cairo)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1280x800
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.4/tps/win64/jre
+
+User name: 	Wegdan
+User home directory: C:/Users/Wegdan
+User working directory: C:/Users/Wegdan/Documents/GitHub/PLC_Project
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI base root directory: C:/Xilinx/Vivado
+RDI data directory: C:/Xilinx/Vivado/2016.4/data
+RDI bin directory: C:/Xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: C:/Users/Wegdan/AppData/Roaming/Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: C:/Users/Wegdan/AppData/Roaming/Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	205 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 496 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bt:g (cd:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Wegdan\Documents\GitHub\PLC_Project\PLC_Project.xpr. Version: Vivado v2016.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 42 MB (+41885kb) [00:00:05]
+// [Engine Memory]: 425 MB (+294423kb) [00:00:05]
+// Tcl Message: open_project C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 452 MB (+5842kb) [00:00:06]
+// [GUI Memory]: 66 MB (+22795kb) [00:00:06]
+// [Engine Memory]: 491 MB (+17414kb) [00:00:06]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'. 
+// Project name: PLC_Project; location: C:/Users/Wegdan/Documents/GitHub/PLC_Project; part: xc7k70tfbv676-1
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 503 MB. GUI used memory: 32 MB. Current time: 12/27/22 1:50:14 PM EET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cd:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (C:JPanel, b:g)
+// [Engine Memory]: 519 MB (+3331kb) [00:00:32]
+// Elapsed time: 18 seconds
+String[] filenames31467 = {"C:/Users/Wegdan/Desktop/plc/plc.srcs/sources_1/new/Adder16Bit.vhd", "C:/Users/Wegdan/Desktop/plc/plc.srcs/sources_1/new/multiplieraccurate88.vhd", "C:/Users/Wegdan/Desktop/plc/plc.srcs/sources_1/new/multiplierapprox88.vhd"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 25 seconds
+dismissDialog("Add Sources"); // b:g (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {C:/Users/Wegdan/Desktop/plc/plc.srcs/sources_1/new/multiplieraccurate88.vhd C:/Users/Wegdan/Desktop/plc/plc.srcs/sources_1/new/Adder16Bit.vhd C:/Users/Wegdan/Desktop/plc/plc.srcs/sources_1/new/multiplierapprox88.vhd} 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 537 MB. GUI used memory: 32 MB. Current time: 12/27/22 1:50:49 PM EET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cd:JFrame): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a:JRadioButton (JPanel:JComponent, b:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (C:JPanel, b:g)
+// Elapsed time: 19 seconds
+String[] filenames16706 = {"C:/Users/Wegdan/Desktop/plc/plc.srcs/sim_1/new/Adder16Bit_tb.vhd", "C:/Users/Wegdan/Desktop/plc/plc.srcs/sim_1/new/fulladder_tb.vhd", "C:/Users/Wegdan/Desktop/plc/plc.srcs/sim_1/new/multiplieraccurate88_tb.vhd", "C:/Users/Wegdan/Desktop/plc/plc.srcs/sim_1/new/multiplierapprox88_tb.vhd"};
+setFileChooser(filenames16706);
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 24 seconds
+dismissDialog("Add Sources"); // b:g (cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 -norecurse {C:/Users/Wegdan/Desktop/plc/plc.srcs/sim_1/new/Adder16Bit_tb.vhd C:/Users/Wegdan/Desktop/plc/plc.srcs/sim_1/new/fulladder_tb.vhd C:/Users/Wegdan/Desktop/plc/plc.srcs/sim_1/new/multiplierapprox88_tb.vhd C:/Users/Wegdan/Desktop/plc/plc.srcs/sim_1/new/multiplieraccurate88_tb.vhd} 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 10); // y:i (D:JPanel, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 11); // y:i (D:JPanel, cd:JFrame)
