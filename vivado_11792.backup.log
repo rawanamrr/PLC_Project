@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Dec 27 14:35:22 2022
+# Process ID: 11792
+# Current directory: C:/Users/Wegdan/Documents/GitHub/PLC_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11744 C:\Users\Wegdan\Documents\GitHub\PLC_Project\PLC_Project.xpr
+# Log file: C:/Users/Wegdan/Documents/GitHub/PLC_Project/vivado.log
+# Journal file: C:/Users/Wegdan/Documents/GitHub/PLC_Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.

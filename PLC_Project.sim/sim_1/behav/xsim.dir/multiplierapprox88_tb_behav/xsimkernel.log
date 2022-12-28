@@ -1,0 +1,7 @@
+Running: xsim.dir/multiplierapprox88_tb_behav/xsimk.exe -simmode gui -wdb multiplierapprox88_tb_behav.wdb -simrunnum 0 -socket 49783
+Design successfully loaded
+Design Loading Memory Usage: 9628 KB (Peak: 9628 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 10412 KB (Peak: 10412 KB)
+Simulation CPU Usage: 15 ms

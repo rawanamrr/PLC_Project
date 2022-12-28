@@ -30,7 +30,7 @@ uut: multiplieraccurate88
            
 stim_proc: process
     begin
-x<="11001101"; y<="10100101"; wait for 10 ns;  
+x<="11111111"; y<="11111111"; wait for 10 ns;  
 x<="00000000"; y<="00000000"; wait for 10 ns; 
  wait;
 end process;
