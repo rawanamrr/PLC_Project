@@ -22,21 +22,21 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 
-entity Act_16bits is
-    Port ( in1 : in STD_LOGIC_VECTOR (16 downto 0);
-           out_act16 : out STD_LOGIC_VECTOR (15 downto 0));
-end Act_16bits;
+entity Act_32bits is
+    Port ( in1 : in STD_LOGIC_VECTOR (32 downto 0);
+           out_act32 : out STD_LOGIC_VECTOR (31 downto 0));
+end Act_32bits;
 
-architecture Behavioral of Act_16bits is
+architecture Behavioral of Act_32bits is
 
 begin
 
 p1: process(in1)
 begin
-if in1< "00010011100010000" then
-out_act16<= "0000000000000000";
+if in1< "000000000000000000010011100010000" then
+out_act32<= "00000000000000000000000000000000";
  else
-out_act16<= in1(16 downto 1);
+out_act32<= in1(32 downto 1);
 end if;
 
 end process;
