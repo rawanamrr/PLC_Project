@@ -1,6 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  "../../../PLC_Project.srcs/sources_1/new/Act_32bits.vhd"
-vhdl xil_defaultlib  "../../../PLC_Project.srcs/sim_1/new/Act_32bits_tb.vhd"
-
-# Do not sort compile order
-nosort

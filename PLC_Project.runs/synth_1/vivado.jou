@@ -2,11 +2,11 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Tue Dec 27 17:02:30 2022
-# Process ID: 18192
-# Current directory: C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.runs/synth_1
-# Command line: vivado.exe -log approxMult_16x16.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source approxMult_16x16.tcl
-# Log file: C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.runs/synth_1/approxMult_16x16.vds
-# Journal file: C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.runs/synth_1\vivado.jou
+# Start of session at: Wed Dec 28 21:21:00 2022
+# Process ID: 3820
+# Current directory: D:/PLC_Project/PLC_Project.runs/synth_1
+# Command line: vivado.exe -log MAC_acc16.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MAC_acc16.tcl
+# Log file: D:/PLC_Project/PLC_Project.runs/synth_1/MAC_acc16.vds
+# Journal file: D:/PLC_Project/PLC_Project.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source approxMult_16x16.tcl -notrace
+source MAC_acc16.tcl -notrace

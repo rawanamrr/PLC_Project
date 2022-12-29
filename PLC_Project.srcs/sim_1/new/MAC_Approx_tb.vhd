@@ -45,16 +45,26 @@ COMPONENT MAC_Aprrox is
            bias : in STD_LOGIC_VECTOR (7 downto 0);
            macapproxout : out STD_LOGIC_VECTOR (16 downto 0));
 end COMPONENT;
+component MAC_acc is
+    Port ( x1 : in STD_LOGIC_VECTOR (7 downto 0);
+           x2 : in STD_LOGIC_VECTOR (7 downto 0);
+           w1 : in STD_LOGIC_VECTOR (7 downto 0);
+           w2 : in STD_LOGIC_VECTOR (7 downto 0);
+           bias : in STD_LOGIC_VECTOR (7 downto 0);
+           macaccout : out STD_LOGIC_VECTOR (16 downto 0));
+end component;
 
 signal x1 :  STD_LOGIC_VECTOR (7 downto 0):= (others => '0');
 signal x2 :  STD_LOGIC_VECTOR (7 downto 0):= (others => '0');
 signal w1 :  STD_LOGIC_VECTOR (7 downto 0):= (others => '0');
 signal w2 :  STD_LOGIC_VECTOR (7 downto 0):= (others => '0');
 signal bias :  STD_LOGIC_VECTOR (7 downto 0):= (others => '0');
-signal macapproxout :  STD_LOGIC_VECTOR (16 downto 0):= (others => '0');
+signal APPROXIMATE_MAC :  STD_LOGIC_VECTOR (16 downto 0):= (others => '0');
+signal ACCURATE_MAC :  STD_LOGIC_VECTOR (16 downto 0):= (others => '0');
            
 begin
-uut: MAC_Aprrox port map(x1,x2,w1,w2,bias,macapproxout);
+uut: MAC_Aprrox port map(x1,x2,w1,w2,bias,APPROXIMATE_MAC);
+uut2:MAC_acc port map(x1,x2,w1,w2,bias,ACCURATE_MAC);
 stim_proc: process
     begin
  x1<="11111111"; x2<="11111111"; w1<="11111111"; w2<="11111111"; bias<="00000001"; wait for 10 ns;  

@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=E:/Lab/Xillinx/Vivado/2016.4/ids_lite/ISE/bin/nt64;E:/Lab/Xillinx/Vivado/2016.4/ids_lite/ISE/lib/nt64:E:/Lab/Xillinx/Vivado/2016.4/bin
+  PATH=D:/Programs/Xillinx/Vivado/2016.4/ids_lite/ISE/bin/nt64;D:/Programs/Xillinx/Vivado/2016.4/ids_lite/ISE/lib/nt64:D:/Programs/Xillinx/Vivado/2016.4/bin
 else
-  PATH=E:/Lab/Xillinx/Vivado/2016.4/ids_lite/ISE/bin/nt64;E:/Lab/Xillinx/Vivado/2016.4/ids_lite/ISE/lib/nt64:E:/Lab/Xillinx/Vivado/2016.4/bin:$PATH
+  PATH=D:/Programs/Xillinx/Vivado/2016.4/ids_lite/ISE/bin/nt64;D:/Programs/Xillinx/Vivado/2016.4/ids_lite/ISE/lib/nt64:D:/Programs/Xillinx/Vivado/2016.4/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.runs/synth_1'
+HD_PWD='D:/PLC_Project/PLC_Project.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log approxMult_16x16.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source approxMult_16x16.tcl
+EAStep vivado -log MAC_acc16.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MAC_acc16.tcl

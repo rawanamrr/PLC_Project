@@ -1,6 +1,6 @@
 Vivado Simulator 2016.4
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1ba1becea8d54226a7bdd09e5cea07b9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Act_32bit_tb_behav xil_defaultlib.Act_32bit_tb -log elaborate.log 
+Running: D:/Programs/Xillinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1ba1becea8d54226a7bdd09e5cea07b9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_HiddenNeuron_behav xil_defaultlib.tb_HiddenNeuron -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -10,6 +10,21 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.Act_32bits [act_32bits_default]
-Compiling architecture behavioral of entity xil_defaultlib.act_32bit_tb
-Built simulation snapshot Act_32bit_tb_behav
+Compiling architecture behavioral of entity xil_defaultlib.approxMult_2x2 [approxmult_2x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_3bit [adder_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_4bit [adder_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.approxMult_4x4 [approxmult_4x4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_8bit [adder_8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.approxMult_8x8 [approxmult_8x8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_16bit [adder_16bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAC_Aprrox [mac_aprrox_default]
+Compiling architecture behavioral of entity xil_defaultlib.Act_16bits [act_16bits_default]
+Compiling architecture behavioral of entity xil_defaultlib.HiddenNeuron_approx [hiddenneuron_approx_default]
+Compiling architecture behavioral of entity xil_defaultlib.accMult_2x2 [accmult_2x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.accMult_4x4 [accmult_4x4_default]
+Compiling architecture behavioral of entity xil_defaultlib.accMult_8x8v1 [accmult_8x8v1_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAC_acc [mac_acc_default]
+Compiling architecture behavioral of entity xil_defaultlib.HiddenNeuron_acc [hiddenneuron_acc_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_hiddenneuron
+Built simulation snapshot tb_HiddenNeuron_behav
