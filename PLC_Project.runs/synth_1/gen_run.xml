@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1672255258">
-  <File Type="RDS-PROPCONSTRS" Name="MAC_acc16_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="MAC_acc16.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="MAC_acc16_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="MAC_acc16.vds"/>
   <File Type="RDS-UTIL" Name="MAC_acc16_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="MAC_acc16_utilization_synth.pb"/>
