@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.xpr">
+<Project Version="7" Minor="17" Path="C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="1ba1becea8d54226a7bdd09e5cea07b9"/>
@@ -404,6 +404,15 @@
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/tb_CLA_4bit.vhd"/>
           <Attr Name="ImportTime" Val="1672247097"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/sim/tb_MAC16.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/PLC files/sim/tb_MAC16.vhd"/>
+          <Attr Name="ImportTime" Val="1672323612"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
