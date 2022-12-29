@@ -42,14 +42,16 @@ signal HN5_sig : STD_LOGIC_VECTOR(15 downto 0);
 signal M1,M2 : STD_LOGIC_VECTOR(32 downto 0);
 signal FINAL_MAC: STD_LOGIC_VECTOR(32 downto 0);
 signal activeFn_sig: STD_LOGIC_VECTOR(31 downto 0);
+signal bias_out: STD_LOGIC_VECTOR(15 downto 0);
 begin
 HN_1:HiddenNeuron_approx port map(x1,x2,w11,w21,bias,HN1_sig);
 HN_2:HiddenNeuron_approx port map(x1,x2,w12,w22,bias,HN2_sig);
 HN_3:HiddenNeuron_approx port map(x1,x2,w13,w23,bias,HN3_sig);
 HN_4:HiddenNeuron_approx port map(x1,x2,w14,w24,bias,HN4_sig);
 HN_5:HiddenNeuron_approx port map(x1,x2,w15,w25,bias,HN5_sig);
+bias_out<="00000000"&bias;
 
-MAC:MAC_approx16 port map(HN1_sig,HN2_sig,HN3_sig,HN4_sig,HN5_sig,wh1,wh2,wh3,wh4,wh5,FINAL_MAC);
+MAC:MAC_approx16 port map(HN1_sig,HN2_sig,HN3_sig,HN4_sig,HN5_sig,wh1,wh2,wh3,wh4,wh5,bias_out,FINAL_MAC);
 aciveFn:Act_32bits port map(FINAL_MAC,activeFn_sig);
 
 Final_OUT<=activeFn_sig;

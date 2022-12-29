@@ -1,7 +1,7 @@
 @echo off
-set xv_path=E:\\Lab\\Xillinx\\Vivado\\2016.4\\bin
-echo "xvhdl -m64 --relax -prj tb_SkipADD_32bit_vhdl.prj"
-call %xv_path%/xvhdl  -m64 --relax -prj tb_SkipADD_32bit_vhdl.prj -log xvhdl.log
+set xv_path=C:\\Xilinx\\Vivado\\2016.4\\bin
+echo "xvhdl -m64 --relax -prj tb_neuralNetw_vhdl.prj"
+call %xv_path%/xvhdl  -m64 --relax -prj tb_neuralNetw_vhdl.prj -log xvhdl.log
 call type xvhdl.log > compile.log
 if "%errorlevel%"=="1" goto END
 if "%errorlevel%"=="0" goto SUCCESS

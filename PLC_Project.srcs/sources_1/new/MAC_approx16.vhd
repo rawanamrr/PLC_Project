@@ -25,9 +25,9 @@ component Adder_32Bits is
            cout : out STD_LOGIC);
 end component;
 signal M1,M2,M3,M4,M5: std_logic_vector(31 downto 0);
-signal sum1,sum2,sum3,sum4,sumtotal: std_logic_vector(31 downto 0);
+signal sum1,sum2,sum3,sum4,sum5,sumtotal: std_logic_vector(31 downto 0);
 signal cout,couttotal: std_logic;
-signal c1,c2,c3,c4: std_logic;
+signal c1,c2,c3,c4,c5: std_logic;
 signal temp :std_logic_vector(31 downto 0);
 
 begin
@@ -40,11 +40,13 @@ mult5: approxMult_16x16 port map(x5,w5,M5);
 
 
 
+
 add1: Adder_32Bits port map(M1,M2,'0',sum1,c1);
-add2: Adder_32Bits port map(M3,M4,c1,sum2,c2);
-add3:Adder_32Bits port map(sum2,M5,c2,sum3,c3);
-add4:Adder_32Bits port map(sum3,bias,c3,sum4,c4);
-macapproxout<=c4&sum4;
-macapproxout<=c3&sum3;
+add2: Adder_32Bits port map(M3,sum1,c1,sum2,c2);
+add3:Adder_32Bits port map(sum2,M4,c2,sum3,c3);
+add4:Adder_32Bits port map(sum3,M5,c3,sum4,c4);
+add5:Adder_32Bits port map(sum4,temp,c4,sum5,c5);
+macapproxout<=c5&sum5;
+
 
 end Behavioral;
