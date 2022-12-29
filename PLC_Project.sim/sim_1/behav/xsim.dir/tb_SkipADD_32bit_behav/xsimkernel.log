@@ -2,3 +2,6 @@ Running: xsim.dir/tb_SkipADD_32bit_behav/xsimk.exe -simmode gui -wdb tb_SkipADD_
 Design successfully loaded
 Design Loading Memory Usage: 9732 KB (Peak: 9732 KB)
 Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 10448 KB (Peak: 10448 KB)
+Simulation CPU Usage: 93 ms
