@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Fri Dec 30 12:57:49 2022
+# Process ID: 4208
+# Current directory: C:/Users/Wegdan/Documents/GitHub/PLC_Project/plc_project2/PLC_Project.runs/synth_1
+# Command line: vivado.exe -log MAC_acc16.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MAC_acc16.tcl
+# Log file: C:/Users/Wegdan/Documents/GitHub/PLC_Project/plc_project2/PLC_Project.runs/synth_1/MAC_acc16.vds
+# Journal file: C:/Users/Wegdan/Documents/GitHub/PLC_Project/plc_project2/PLC_Project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source MAC_acc16.tcl -notrace

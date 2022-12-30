@@ -1,0 +1,87 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+Process ID: 11792
+
+Current time: 	12/27/22 2:35:36 PM EET
+Time zone: 	Eastern European Time (Africa/Cairo)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1280x800
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.4/tps/win64/jre
+
+User name: 	Wegdan
+User home directory: C:/Users/Wegdan
+User working directory: C:/Users/Wegdan/Documents/GitHub/PLC_Project
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI base root directory: C:/Xilinx/Vivado
+RDI data directory: C:/Xilinx/Vivado/2016.4/data
+RDI bin directory: C:/Xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: C:/Users/Wegdan/AppData/Roaming/Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: C:/Users/Wegdan/AppData/Roaming/Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	199 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 519 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Wegdan\Documents\GitHub\PLC_Project\PLC_Project.xpr. Version: Vivado v2016.4 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// [GUI Memory]: 40 MB (+39618kb) [00:00:05]
+// TclEventType: FILE_SET_NEW
+// [Engine Memory]: 417 MB (+285772kb) [00:00:05]
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 439 MB (+1266kb) [00:00:06]
+// [Engine Memory]: 486 MB (+26179kb) [00:00:07]
+// [GUI Memory]: 47 MB (+4542kb) [00:00:07]
+// [GUI Memory]: 49 MB (+584kb) [00:00:08]
+// [Engine Memory]: 515 MB (+4946kb) [00:00:08]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'. 
+// Project name: PLC_Project; location: C:/Users/Wegdan/Documents/GitHub/PLC_Project; part: xc7k70tfbv676-1
+// [GUI Memory]: 53 MB (+1525kb) [00:00:08]
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 34 MB. Current time: 12/27/22 2:35:36 PM EET
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, multiplieraccurate88 - Behavioral (multiplieraccurate88.vhd)]", 2); // y:i (D:JPanel, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 41); // y:i (D:JPanel, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 42); // y:i (D:JPanel, cd:JFrame)
+// PAPropertyPanels.initPanels (Adder16Bit.vhd) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, multiplieraccurate88 - Behavioral (multiplieraccurate88.vhd), add5 - Adder16Bit - Behavioral (Adder16Bit.vhd)]", 15, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, multiplieraccurate88 - Behavioral (multiplieraccurate88.vhd), add5 - Adder16Bit - Behavioral (Adder16Bit.vhd)]", 15, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, multiplieraccurate88 - Behavioral (multiplieraccurate88.vhd), add5 - Adder16Bit - Behavioral (Adder16Bit.vhd)]", 15, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+// [GUI Memory]: 62 MB (+6724kb) [00:00:26]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, multiplieraccurate88 - Behavioral (multiplieraccurate88.vhd), add5 - Adder16Bit - Behavioral (Adder16Bit.vhd)]", 15, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, multiplieraccurate88 - Behavioral (multiplieraccurate88.vhd), add5 - Adder16Bit - Behavioral (Adder16Bit.vhd), Adding.uut - fulladder - Behavioral (fulladder.vhd)]", 16, false); // y:i (D:JPanel, cd:JFrame)
+selectCodeEditor("Adder16Bit.vhd", 437, 57); // bF:I (JPanel:JComponent, cd:JFrame)

@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-| Date         : Wed Dec 28 21:21:24 2022
-| Host         : DESKTOP-TO38104 running 64-bit major release  (build 9200)
+| Date         : Fri Dec 30 12:58:50 2022
+| Host         : DESKTOP-S2U2OVG running 64-bit major release  (build 9200)
 | Command      : report_utilization -file MAC_acc16_utilization_synth.rpt -pb MAC_acc16_utilization_synth.pb
 | Design       : MAC_acc16
 | Device       : 7k70tfbv676-1
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             | 1024 |     0 |     41000 |  2.50 |
-|   LUT as Logic          | 1024 |     0 |     41000 |  2.50 |
+| Slice LUTs*             | 2453 |     0 |     41000 |  5.98 |
+|   LUT as Logic          | 2453 |     0 |     41000 |  5.98 |
 |   LUT as Memory         |    0 |     0 |     13400 |  0.00 |
 | Slice Registers         |    0 |     0 |     82000 |  0.00 |
 |   Register as Flip Flop |    0 |     0 |     82000 |  0.00 |
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |  113 |     0 |       300 | 37.67 |
+| Bonded IOB                  |  209 |     0 |       300 | 69.67 |
 | Bonded IPADs                |    0 |     0 |        26 |  0.00 |
 | Bonded OPADs                |    0 |     0 |        16 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         6 |  0.00 |
@@ -151,12 +151,12 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     |  725 |                 LUT |
-| LUT5     |  169 |                 LUT |
-| LUT3     |  122 |                 LUT |
-| LUT4     |  118 |                 LUT |
-| IBUF     |   80 |                  IO |
-| LUT2     |   57 |                 LUT |
+| LUT6     | 1726 |                 LUT |
+| LUT5     |  363 |                 LUT |
+| LUT3     |  323 |                 LUT |
+| LUT4     |  306 |                 LUT |
+| IBUF     |  176 |                  IO |
+| LUT2     |  157 |                 LUT |
 | OBUF     |   33 |                  IO |
 +----------+------+---------------------+
 

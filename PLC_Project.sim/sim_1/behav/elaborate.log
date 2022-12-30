@@ -22,6 +22,8 @@ Compiling architecture behavioral of entity xil_defaultlib.Act_16bits [act_16bit
 Compiling architecture behavioral of entity xil_defaultlib.HiddenNeuron_acc [hiddenneuron_acc_default]
 Compiling architecture behavioral of entity xil_defaultlib.accMult_16x16 [accmult_16x16_default]
 Compiling architecture behavioral of entity xil_defaultlib.Adder_32Bits [adder_32bits_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_33Bits [adder_33bits_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_34Bits [adder_34bits_default]
 Compiling architecture behavioral of entity xil_defaultlib.MAC_acc16 [mac_acc16_default]
 Compiling architecture behavioral of entity xil_defaultlib.Act_32bits [act_32bits_default]
 Compiling architecture behavioral of entity xil_defaultlib.NeuralNetw_acc [neuralnetw_acc_default]

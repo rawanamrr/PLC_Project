@@ -28,6 +28,10 @@ INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Pr
 INFO: [VRFC 10-307] analyzing entity approxMult_16x16
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Act_16bits.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Act_16bits
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_34bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Adder_34Bits
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Adder_33Bits
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_32Bits.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Adder_32Bits
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_16x16.vhd" into library xil_defaultlib

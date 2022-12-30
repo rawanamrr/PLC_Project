@@ -2,10 +2,10 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Wed Dec 28 17:47:03 2022
-# Process ID: 8684
+# Start of session at: Fri Dec 30 12:54:09 2022
+# Process ID: 10620
 # Current directory: C:/Users/Wegdan/Documents/GitHub/PLC_Project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9636 C:\Users\Wegdan\Documents\GitHub\PLC_Project\PLC_Project.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8644 C:\Users\Wegdan\Documents\GitHub\PLC_Project\PLC_Project.xpr
 # Log file: C:/Users/Wegdan/Documents/GitHub/PLC_Project/vivado.log
 # Journal file: C:/Users/Wegdan/Documents/GitHub/PLC_Project\vivado.jou
 #-----------------------------------------------------------
@@ -16,94 +16,14 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
-open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 784.664 ; gain = 137.352
-close [ open C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd w ]
-add_files C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sim_1/new/MAC_Approx_tb.vhd w ]
-add_files -fileset sim_1 C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sim_1/new/MAC_Approx_tb.vhd
 launch_simulation
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'multiplieraccurate88_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_neuralNetw' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj multiplieraccurate88_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity FA
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Accurate.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Accurate
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_16bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/multiplieraccurate88.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity multiplieraccurate88
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sim_1/new/multiplieraccurate88_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity multiplieraccurate88_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-Vivado Simulator 2016.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1ba1becea8d54226a7bdd09e5cea07b9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot multiplieraccurate88_tb_behav xil_defaultlib.multiplieraccurate88_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.Accurate [accurate_default]
-Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_16bit [adder_16bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.multiplieraccurate88 [multiplieraccurate88_default]
-Compiling architecture behavioral of entity xil_defaultlib.multiplieraccurate88_tb
-Built simulation snapshot multiplieraccurate88_tb_behav
-
-****** Webtalk v2016.4 (64-bit)
-  **** SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
-  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
-
-source C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/xsim.dir/multiplieraccurate88_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Wed Dec 28 18:25:04 2022...
-INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "multiplieraccurate88_tb_behav -key {Behavioral:sim_1:Functional:multiplieraccurate88_tb} -tclbatch {multiplieraccurate88_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2016.4
-Time resolution is 1 ps
-source multiplieraccurate88_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'multiplieraccurate88_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 826.113 ; gain = 6.949
-set_property top MAC_Approx_tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-launch_simulation
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/multiplieraccurate88_tb_behav.wdb
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/simulate.log
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/xelab.pb
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'MAC_Approx_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj MAC_Approx_tb_vhdl.prj"
+"xvhdl -m64 --relax -prj tb_neuralNetw_vhdl.prj"
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity FA
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd" into library xil_defaultlib
@@ -112,367 +32,54 @@ INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Pr
 INFO: [VRFC 10-307] analyzing entity Adder_3bit
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4Bit.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Adder_4bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_2x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity accMult_2x2
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity approxMult_4x4
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Adder_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_4x4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity accMult_4x4
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity approxMult_8x8
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Adder_16bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_8x8v1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity accMult_8x8v1
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity MAC_Aprrox
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sim_1/new/MAC_Approx_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MAC_Approx_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-Vivado Simulator 2016.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1ba1becea8d54226a7bdd09e5cea07b9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAC_Approx_tb_behav xil_defaultlib.MAC_Approx_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_2x2 [approxmult_2x2_default]
-Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_3bit [adder_3bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_4bit [adder_4bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_4x4 [approxmult_4x4_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_8bit [adder_8bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_8x8 [approxmult_8x8_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_16bit [adder_16bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.MAC_Aprrox [mac_aprrox_default]
-Compiling architecture behavioral of entity xil_defaultlib.mac_approx_tb
-Built simulation snapshot MAC_Approx_tb_behav
-
-****** Webtalk v2016.4 (64-bit)
-  **** SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
-  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
-
-source C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/xsim.dir/MAC_Approx_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Wed Dec 28 18:27:18 2022...
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "MAC_Approx_tb_behav -key {Behavioral:sim_1:Functional:MAC_Approx_tb} -tclbatch {MAC_Approx_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2016.4
-Time resolution is 1 ps
-source MAC_Approx_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'MAC_Approx_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 849.684 ; gain = 0.000
-relaunch_sim
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'MAC_Approx_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj MAC_Approx_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity FA
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_2x2
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_3bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4Bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_4bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_4x4
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_8bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_8x8
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_16bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MAC_Aprrox
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sim_1/new/MAC_Approx_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MAC_Approx_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-Vivado Simulator 2016.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1ba1becea8d54226a7bdd09e5cea07b9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAC_Approx_tb_behav xil_defaultlib.MAC_Approx_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_2x2 [approxmult_2x2_default]
-Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_3bit [adder_3bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_4bit [adder_4bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_4x4 [approxmult_4x4_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_8bit [adder_8bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_8x8 [approxmult_8x8_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_16bit [adder_16bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.MAC_Aprrox [mac_aprrox_default]
-Compiling architecture behavioral of entity xil_defaultlib.mac_approx_tb
-Built simulation snapshot MAC_Approx_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-Vivado Simulator 2016.4
-Time resolution is 1 ps
-relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 855.098 ; gain = 0.000
-relaunch_sim
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'MAC_Approx_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj MAC_Approx_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity FA
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_2x2
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_3bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4Bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_4bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_4x4
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_8bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_8x8
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_16bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MAC_Aprrox
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sim_1/new/MAC_Approx_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MAC_Approx_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-Vivado Simulator 2016.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1ba1becea8d54226a7bdd09e5cea07b9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAC_Approx_tb_behav xil_defaultlib.MAC_Approx_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_2x2 [approxmult_2x2_default]
-Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_3bit [adder_3bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_4bit [adder_4bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_4x4 [approxmult_4x4_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_8bit [adder_8bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_8x8 [approxmult_8x8_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_16bit [adder_16bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.MAC_Aprrox [mac_aprrox_default]
-Compiling architecture behavioral of entity xil_defaultlib.mac_approx_tb
-Built simulation snapshot MAC_Approx_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-Vivado Simulator 2016.4
-Time resolution is 1 ps
-relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 879.336 ; gain = 0.000
-relaunch_sim
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'MAC_Approx_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj MAC_Approx_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity FA
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_2x2
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_3bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4Bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_4bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_4x4
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_8bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_8x8
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_16bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MAC_Aprrox
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sim_1/new/MAC_Approx_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MAC_Approx_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-Vivado Simulator 2016.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1ba1becea8d54226a7bdd09e5cea07b9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAC_Approx_tb_behav xil_defaultlib.MAC_Approx_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_2x2 [approxmult_2x2_default]
-Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_3bit [adder_3bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_4bit [adder_4bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_4x4 [approxmult_4x4_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_8bit [adder_8bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_8x8 [approxmult_8x8_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_16bit [adder_16bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.MAC_Aprrox [mac_aprrox_default]
-Compiling architecture behavioral of entity xil_defaultlib.mac_approx_tb
-Built simulation snapshot MAC_Approx_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-Vivado Simulator 2016.4
-Time resolution is 1 ps
-relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 879.336 ; gain = 0.000
-set_property top multiplierapprox88_tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-launch_simulation
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/MAC_Approx_tb_behav.wdb
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/multiplieraccurate88_tb_behav.wdb
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/simulate.log
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/xelab.pb
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'multiplierapprox88_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj multiplierapprox88_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity FA
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity UDM
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_16bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity multiplierapprox88
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sim_1/new/multiplierapprox88_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity multiplierapprox88_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-Vivado Simulator 2016.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1ba1becea8d54226a7bdd09e5cea07b9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot multiplierapprox88_tb_behav xil_defaultlib.multiplierapprox88_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.UDM [udm_default]
-Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_16bit [adder_16bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.multiplierapprox88 [multiplierapprox88_default]
-Compiling architecture behavioral of entity xil_defaultlib.multiplierapprox88_tb
-Built simulation snapshot multiplierapprox88_tb_behav
-
-****** Webtalk v2016.4 (64-bit)
-  **** SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
-  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
-
-source C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/xsim.dir/multiplierapprox88_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Wed Dec 28 18:38:20 2022...
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "multiplierapprox88_tb_behav -key {Behavioral:sim_1:Functional:multiplierapprox88_tb} -tclbatch {multiplierapprox88_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2016.4
-Time resolution is 1 ps
-source multiplierapprox88_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'multiplierapprox88_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 879.336 ; gain = 0.000
-set_property top MAC_Approx_tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-current_sim simulation_2
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/MAC_Approx_tb_behav.wdb
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/multiplieraccurate88_tb_behav.wdb
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/multiplierapprox88_tb_behav.wdb
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/simulate.log
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/xelab.pb
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'MAC_Approx_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj MAC_Approx_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity FA
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_2x2
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_3bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4Bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_4bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_4x4
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_8bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_8x8
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_16bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MAC_Aprrox
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sim_1/new/MAC_Approx_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MAC_Approx_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_acc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MAC_acc
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity approxMult_16x16
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Act_16bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Act_16bits
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_32Bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Adder_32Bits
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_16x16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity accMult_16x16
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_approx16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MAC_approx16
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/HiddenNeuron_approx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HiddenNeuron_approx
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/HiddenNeuron_acc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HiddenNeuron_acc
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Act_32bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Act_32bits
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_acc16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MAC_acc16
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/NeuralNetw_approx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NeuralNetw_approx
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/NeuralNetw_acc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NeuralNetw_acc
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sim_1/new/tb_neuralNetw.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_neuralNetw
 INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
 Vivado Simulator 2016.4
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1ba1becea8d54226a7bdd09e5cea07b9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAC_Approx_tb_behav xil_defaultlib.MAC_Approx_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1ba1becea8d54226a7bdd09e5cea07b9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_neuralNetw_behav xil_defaultlib.tb_neuralNetw -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -482,34 +89,50 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_2x2 [approxmult_2x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.accMult_2x2 [accmult_2x2_default]
 Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_3bit [adder_3bit_default]
 Compiling architecture behavioral of entity xil_defaultlib.Adder_4bit [adder_4bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_4x4 [approxmult_4x4_default]
+Compiling architecture behavioral of entity xil_defaultlib.accMult_4x4 [accmult_4x4_default]
 Compiling architecture behavioral of entity xil_defaultlib.Adder_8bit [adder_8bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_8x8 [approxmult_8x8_default]
+Compiling architecture behavioral of entity xil_defaultlib.accMult_8x8v1 [accmult_8x8v1_default]
 Compiling architecture behavioral of entity xil_defaultlib.Adder_16bit [adder_16bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAC_acc [mac_acc_default]
+Compiling architecture behavioral of entity xil_defaultlib.Act_16bits [act_16bits_default]
+Compiling architecture behavioral of entity xil_defaultlib.HiddenNeuron_acc [hiddenneuron_acc_default]
+Compiling architecture behavioral of entity xil_defaultlib.accMult_16x16 [accmult_16x16_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_32Bits [adder_32bits_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAC_acc16 [mac_acc16_default]
+Compiling architecture behavioral of entity xil_defaultlib.Act_32bits [act_32bits_default]
+Compiling architecture behavioral of entity xil_defaultlib.NeuralNetw_acc [neuralnetw_acc_default]
+Compiling architecture behavioral of entity xil_defaultlib.approxMult_2x2 [approxmult_2x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_3bit [adder_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.approxMult_4x4 [approxmult_4x4_default]
+Compiling architecture behavioral of entity xil_defaultlib.approxMult_8x8 [approxmult_8x8_default]
 Compiling architecture behavioral of entity xil_defaultlib.MAC_Aprrox [mac_aprrox_default]
-Compiling architecture behavioral of entity xil_defaultlib.mac_approx_tb
-Built simulation snapshot MAC_Approx_tb_behav
+Compiling architecture behavioral of entity xil_defaultlib.HiddenNeuron_approx [hiddenneuron_approx_default]
+Compiling architecture behavioral of entity xil_defaultlib.approxMult_16x16 [approxmult_16x16_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAC_approx16 [mac_approx16_default]
+Compiling architecture behavioral of entity xil_defaultlib.NeuralNetw_approx [neuralnetw_approx_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_neuralnetw
+Built simulation snapshot tb_neuralNetw_behav
 
 ****** Webtalk v2016.4 (64-bit)
   **** SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
   **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 
-source C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/xsim.dir/MAC_Approx_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Wed Dec 28 18:39:25 2022...
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+source C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/xsim.dir/tb_neuralNetw_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec 30 12:55:06 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 802.848 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "MAC_Approx_tb_behav -key {Behavioral:sim_1:Functional:MAC_Approx_tb} -tclbatch {MAC_Approx_tb.tcl} -log {simulate.log}"
+   with args "tb_neuralNetw_behav -key {Behavioral:sim_1:Functional:tb_neuralNetw} -tclbatch {tb_neuralNetw.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2016.4
 Time resolution is 1 ps
-source MAC_Approx_tb.tcl
+source tb_neuralNetw.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -520,142 +143,98 @@ source MAC_Approx_tb.tcl
 #   }
 # }
 # run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'MAC_Approx_tb_behav' loaded.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_neuralNetw_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 879.336 ; gain = 0.000
-relaunch_sim
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'MAC_Approx_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj MAC_Approx_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity FA
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_2x2
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_3bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4Bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_4bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_4x4
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_8bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_8x8
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_16bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MAC_Aprrox
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sim_1/new/MAC_Approx_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MAC_Approx_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-Vivado Simulator 2016.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1ba1becea8d54226a7bdd09e5cea07b9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAC_Approx_tb_behav xil_defaultlib.MAC_Approx_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_2x2 [approxmult_2x2_default]
-Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_3bit [adder_3bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_4bit [adder_4bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_4x4 [approxmult_4x4_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_8bit [adder_8bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_8x8 [approxmult_8x8_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_16bit [adder_16bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.MAC_Aprrox [mac_aprrox_default]
-Compiling architecture behavioral of entity xil_defaultlib.mac_approx_tb
-Built simulation snapshot MAC_Approx_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-Vivado Simulator 2016.4
-Time resolution is 1 ps
-relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 879.336 ; gain = 0.000
-relaunch_sim
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'MAC_Approx_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj MAC_Approx_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity FA
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_2x2
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_3bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4Bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_4bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_4x4
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_8bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_8x8
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_16bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MAC_Aprrox
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sim_1/new/MAC_Approx_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MAC_Approx_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-Vivado Simulator 2016.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1ba1becea8d54226a7bdd09e5cea07b9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAC_Approx_tb_behav xil_defaultlib.MAC_Approx_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_2x2 [approxmult_2x2_default]
-Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_3bit [adder_3bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_4bit [adder_4bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_4x4 [approxmult_4x4_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_8bit [adder_8bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_8x8 [approxmult_8x8_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_16bit [adder_16bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.MAC_Aprrox [mac_aprrox_default]
-Compiling architecture behavioral of entity xil_defaultlib.mac_approx_tb
-Built simulation snapshot MAC_Approx_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-Vivado Simulator 2016.4
-Time resolution is 1 ps
-relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 879.336 ; gain = 0.000
-close [ open C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Act_16bits.vhd w ]
-add_files C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Act_16bits.vhd
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 815.387 ; gain = 12.539
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Accurate.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Accurate.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Act_16bits.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Act_16bits.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Act_32bits.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Act_32bits.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_32Bits.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_32Bits.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4bit.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4bit.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/imports/new/CLA_4bit.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/imports/new/CLA_4bit.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/HiddenNeuron_acc.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/HiddenNeuron_acc.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/HiddenNeuron_approx.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/HiddenNeuron_approx.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_acc.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_acc.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_acc16.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_acc16.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_approx16.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_approx16.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/NeuralNetw_acc.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/NeuralNetw_acc.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/NeuralNetw_approx.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/NeuralNetw_approx.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipADD_16bit.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipADD_16bit.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipAdd_32bit.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipAdd_32bit.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/accMult8x8from2x2.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/accMult8x8from2x2.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_16x16.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_16x16.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_2x2.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_2x2.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_4x4.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_4x4.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_8x8v1.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_8x8v1.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/fulladder.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/fulladder.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/multiplieraccurate88.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/multiplieraccurate88.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd" into library xil_defaultlib [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:1]
+[Fri Dec 30 12:57:59 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri Dec 30 12:59:04 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 176 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'MAC_acc16' is not ideal for floorplanning, since the cellview 'MAC_acc16' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.378 . Memory (MB): peak = 1148.008 ; gain = 2.480
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.378 . Memory (MB): peak = 1148.008 ; gain = 2.480
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1278.301 ; gain = 331.715
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k70tfbv676-1
+INFO: [Netlist 29-17] Analyzing 176 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'MAC_acc16' is not ideal for floorplanning, since the cellview 'MAC_acc16' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1802.156 ; gain = 0.000
+close [ open C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd w ]
+add_files C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd
+close [ open C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_34bits.vhd w ]
+add_files C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_34bits.vhd
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/MAC_Approx_tb_behav.wdb
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/multiplieraccurate88_tb_behav.wdb
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/multiplierapprox88_tb_behav.wdb
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/simulate.log
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/xelab.pb
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'MAC_Approx_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_neuralNetw' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj MAC_Approx_tb_vhdl.prj"
+"xvhdl -m64 --relax -prj tb_neuralNetw_vhdl.prj"
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity FA
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd" into library xil_defaultlib
@@ -664,121 +243,58 @@ INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Pr
 INFO: [VRFC 10-307] analyzing entity Adder_3bit
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4Bit.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Adder_4bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_2x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity accMult_2x2
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity approxMult_4x4
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Adder_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_4x4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity accMult_4x4
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity approxMult_8x8
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Adder_16bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_8x8v1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity accMult_8x8v1
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity MAC_Aprrox
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sim_1/new/MAC_Approx_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MAC_Approx_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_acc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MAC_acc
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity approxMult_16x16
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Act_16bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Act_16bits
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_34bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Adder_34Bits
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Adder_33Bits
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_32Bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Adder_32Bits
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_16x16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity accMult_16x16
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_approx16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MAC_approx16
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/HiddenNeuron_approx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HiddenNeuron_approx
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/HiddenNeuron_acc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HiddenNeuron_acc
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Act_32bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Act_32bits
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_acc16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MAC_acc16
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/NeuralNetw_approx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NeuralNetw_approx
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/NeuralNetw_acc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NeuralNetw_acc
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sim_1/new/tb_neuralNetw.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_neuralNetw
 INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
 Vivado Simulator 2016.4
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1ba1becea8d54226a7bdd09e5cea07b9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAC_Approx_tb_behav xil_defaultlib.MAC_Approx_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-ERROR: [VRFC 10-664] expression has 16 elements ; expected 8 [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd:39]
-ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit mac_approx_tb in library work failed.
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-99] Step results log file:'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/elaborate.log'
-ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/elaborate.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-current_sim simulation_3
-launch_simulation
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/MAC_Approx_tb_behav.wdb
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/multiplieraccurate88_tb_behav.wdb
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/multiplierapprox88_tb_behav.wdb
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/simulate.log
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/xelab.pb
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'MAC_Approx_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj MAC_Approx_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity FA
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_2x2
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_3bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4Bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_4bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_4x4
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_8bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_8x8
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_16bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MAC_Aprrox
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sim_1/new/MAC_Approx_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MAC_Approx_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-Vivado Simulator 2016.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1ba1becea8d54226a7bdd09e5cea07b9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAC_Approx_tb_behav xil_defaultlib.MAC_Approx_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-ERROR: [VRFC 10-664] expression has 16 elements ; expected 8 [C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd:39]
-ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit mac_approx_tb in library work failed.
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-99] Step results log file:'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/elaborate.log'
-ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/elaborate.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-launch_simulation
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/MAC_Approx_tb_behav.wdb
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/multiplieraccurate88_tb_behav.wdb
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/multiplierapprox88_tb_behav.wdb
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/simulate.log
-WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/xelab.pb
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'MAC_Approx_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj MAC_Approx_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity FA
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_2x2
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_3bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4Bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_4bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_4x4
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_8bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_8x8
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_16bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MAC_Aprrox
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sim_1/new/MAC_Approx_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MAC_Approx_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-Vivado Simulator 2016.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1ba1becea8d54226a7bdd09e5cea07b9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAC_Approx_tb_behav xil_defaultlib.MAC_Approx_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1ba1becea8d54226a7bdd09e5cea07b9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_neuralNetw_behav xil_defaultlib.tb_neuralNetw -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -788,34 +304,51 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_2x2 [approxmult_2x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.accMult_2x2 [accmult_2x2_default]
 Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_3bit [adder_3bit_default]
 Compiling architecture behavioral of entity xil_defaultlib.Adder_4bit [adder_4bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_4x4 [approxmult_4x4_default]
+Compiling architecture behavioral of entity xil_defaultlib.accMult_4x4 [accmult_4x4_default]
 Compiling architecture behavioral of entity xil_defaultlib.Adder_8bit [adder_8bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_8x8 [approxmult_8x8_default]
+Compiling architecture behavioral of entity xil_defaultlib.accMult_8x8v1 [accmult_8x8v1_default]
 Compiling architecture behavioral of entity xil_defaultlib.Adder_16bit [adder_16bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAC_acc [mac_acc_default]
+Compiling architecture behavioral of entity xil_defaultlib.Act_16bits [act_16bits_default]
+Compiling architecture behavioral of entity xil_defaultlib.HiddenNeuron_acc [hiddenneuron_acc_default]
+Compiling architecture behavioral of entity xil_defaultlib.accMult_16x16 [accmult_16x16_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_32Bits [adder_32bits_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_33Bits [adder_33bits_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_34Bits [adder_34bits_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAC_acc16 [mac_acc16_default]
+Compiling architecture behavioral of entity xil_defaultlib.Act_32bits [act_32bits_default]
+Compiling architecture behavioral of entity xil_defaultlib.NeuralNetw_acc [neuralnetw_acc_default]
+Compiling architecture behavioral of entity xil_defaultlib.approxMult_2x2 [approxmult_2x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_3bit [adder_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.approxMult_4x4 [approxmult_4x4_default]
+Compiling architecture behavioral of entity xil_defaultlib.approxMult_8x8 [approxmult_8x8_default]
 Compiling architecture behavioral of entity xil_defaultlib.MAC_Aprrox [mac_aprrox_default]
-Compiling architecture behavioral of entity xil_defaultlib.mac_approx_tb
-Built simulation snapshot MAC_Approx_tb_behav
+Compiling architecture behavioral of entity xil_defaultlib.HiddenNeuron_approx [hiddenneuron_approx_default]
+Compiling architecture behavioral of entity xil_defaultlib.approxMult_16x16 [approxmult_16x16_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAC_approx16 [mac_approx16_default]
+Compiling architecture behavioral of entity xil_defaultlib.NeuralNetw_approx [neuralnetw_approx_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_neuralnetw
+Built simulation snapshot tb_neuralNetw_behav
 
 ****** Webtalk v2016.4 (64-bit)
   **** SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
   **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 
-source C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/xsim.dir/MAC_Approx_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Wed Dec 28 18:48:53 2022...
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+source C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/xsim.dir/tb_neuralNetw_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec 30 16:55:25 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "MAC_Approx_tb_behav -key {Behavioral:sim_1:Functional:MAC_Approx_tb} -tclbatch {MAC_Approx_tb.tcl} -log {simulate.log}"
+   with args "tb_neuralNetw_behav -key {Behavioral:sim_1:Functional:tb_neuralNetw} -tclbatch {tb_neuralNetw.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2016.4
 Time resolution is 1 ps
-source MAC_Approx_tb.tcl
+source tb_neuralNetw.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -826,132 +359,11 @@ source MAC_Approx_tb.tcl
 #   }
 # }
 # run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'MAC_Approx_tb_behav' loaded.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_neuralNetw_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 879.336 ; gain = 0.000
-add_wave {{/MAC_Approx_tb/uut/temp}} 
-relaunch_sim
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'MAC_Approx_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj MAC_Approx_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity FA
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_2x2
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_3bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4Bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_4bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_4x4
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_8bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_8x8
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_16bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MAC_Aprrox
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sim_1/new/MAC_Approx_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MAC_Approx_tb
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-Vivado Simulator 2016.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1ba1becea8d54226a7bdd09e5cea07b9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAC_Approx_tb_behav xil_defaultlib.MAC_Approx_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_2x2 [approxmult_2x2_default]
-Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_3bit [adder_3bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_4bit [adder_4bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_4x4 [approxmult_4x4_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_8bit [adder_8bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_8x8 [approxmult_8x8_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_16bit [adder_16bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.MAC_Aprrox [mac_aprrox_default]
-Compiling architecture behavioral of entity xil_defaultlib.mac_approx_tb
-Built simulation snapshot MAC_Approx_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-Vivado Simulator 2016.4
-Time resolution is 1 ps
-relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 885.957 ; gain = 0.000
-relaunch_sim
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'MAC_Approx_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-"xvhdl -m64 --relax -prj MAC_Approx_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity FA
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_2x2
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_3bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4Bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_4bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_4x4
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_8bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity approxMult_8x8
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_16bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MAC_Aprrox
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.srcs/sim_1/new/MAC_Approx_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MAC_Approx_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav'
-Vivado Simulator 2016.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 1ba1becea8d54226a7bdd09e5cea07b9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAC_Approx_tb_behav xil_defaultlib.MAC_Approx_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_2x2 [approxmult_2x2_default]
-Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_3bit [adder_3bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_4bit [adder_4bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_4x4 [approxmult_4x4_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_8bit [adder_8bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.approxMult_8x8 [approxmult_8x8_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_16bit [adder_16bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.MAC_Aprrox [mac_aprrox_default]
-Compiling architecture behavioral of entity xil_defaultlib.mac_approx_tb
-Built simulation snapshot MAC_Approx_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-Vivado Simulator 2016.4
-Time resolution is 1 ps
-relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 885.957 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1850.348 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
-current_sim simulation_3
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1873.848 ; gain = 0.000
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 28 19:04:02 2022...
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 30 16:58:27 2022...
