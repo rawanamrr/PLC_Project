@@ -26,6 +26,14 @@ component approxMult_8x8 is
            res : out STD_LOGIC_VECTOR (15 downto 0));
 end component;
 
+component SkipADD_16bit is
+    Port ( x : in STD_LOGIC_VECTOR (15 downto 0);
+           y : in STD_LOGIC_VECTOR (15 downto 0);
+           cin: in std_logic;
+           res : out STD_LOGIC_VECTOR (15 downto 0);
+           cout: out std_logic);
+end component;
+
 component Adder_16bit is
     Port ( x : in STD_LOGIC_VECTOR (15 downto 0);
            y : in STD_LOGIC_VECTOR (15 downto 0);

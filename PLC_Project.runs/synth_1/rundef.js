@@ -8,9 +8,9 @@ var WshShell = new ActiveXObject( "WScript.Shell" );
 var ProcEnv = WshShell.Environment( "Process" );
 var PathVal = ProcEnv("PATH");
 if ( PathVal.length == 0 ) {
-  PathVal = "C:/Xilinx/SDK/2016.4/bin;C:/Xilinx/Vivado/2016.4/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2016.4/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado/2016.4/bin;";
+  PathVal = "E:/Lab/Xillinx/Vivado/2016.4/ids_lite/ISE/bin/nt64;E:/Lab/Xillinx/Vivado/2016.4/ids_lite/ISE/lib/nt64;E:/Lab/Xillinx/Vivado/2016.4/bin;";
 } else {
-  PathVal = "C:/Xilinx/SDK/2016.4/bin;C:/Xilinx/Vivado/2016.4/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2016.4/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado/2016.4/bin;" + PathVal;
+  PathVal = "E:/Lab/Xillinx/Vivado/2016.4/ids_lite/ISE/bin/nt64;E:/Lab/Xillinx/Vivado/2016.4/ids_lite/ISE/lib/nt64;E:/Lab/Xillinx/Vivado/2016.4/bin;" + PathVal;
 }
 
 ProcEnv("PATH") = PathVal;
@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log MAC_acc16.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MAC_acc16.tcl" );
+         "-log NeuralNetw_approx.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source NeuralNetw_approx.tcl" );
 
 
 

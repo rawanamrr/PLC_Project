@@ -8,6 +8,7 @@ Port ( x1 : in STD_LOGIC_VECTOR (7 downto 0);
            w11,w12,w13,w14,w15,w21,w22,w23,w24,w25: in STD_LOGIC_VECTOR (7 downto 0);--weights from input layer to hidden layer
            wh1,wh2,wh3,wh4,wh5 : in STD_LOGIC_VECTOR (15 downto 0); --weights from  hidden layer to output layer
            bias : in STD_LOGIC_VECTOR (7 downto 0);
+           clk: in std_logic;
            Final_OUT : out STD_LOGIC_VECTOR (31 downto 0));
 end NeuralNetw_acc;
 
@@ -19,7 +20,6 @@ component MAC_acc16 is
            bias : in STD_LOGIC_VECTOR (15 downto 0);
            macaccout : out STD_LOGIC_VECTOR (34 downto 0));
 end component;
-
 
 component Act_32bits is
     Port ( in1 : in STD_LOGIC_VECTOR (34 downto 0);

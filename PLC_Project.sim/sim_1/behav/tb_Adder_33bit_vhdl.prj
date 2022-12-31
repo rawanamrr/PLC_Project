@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../PLC_Project.srcs/sources_1/new/FA.vhd"
+vhdl xil_defaultlib  "../../../PLC_Project.srcs/sources_1/new/Adder_4Bit.vhd"
+vhdl xil_defaultlib  "../../../PLC_Project.srcs/sources_1/imports/new/SkipADD_16bit.vhd"
+vhdl xil_defaultlib  "../../../PLC_Project.srcs/sources_1/imports/new/SkipAdd_32bit.vhd"
+vhdl xil_defaultlib  "../../../PLC_Project.srcs/sources_1/new/SkipAdd_33bit.vhd"
+vhdl xil_defaultlib  "../../../PLC_Project.srcs/sources_1/new/Adder_34bits.vhd"
+vhdl xil_defaultlib  "../../../PLC_Project.srcs/sources_1/new/Adder_33bits.vhd"
+vhdl xil_defaultlib  "../../../PLC_Project.srcs/sources_1/new/Adder_32Bits.vhd"
+vhdl xil_defaultlib  "../../../PLC_Project.srcs/sources_1/new/SkipAdd_34bit.vhd"
+vhdl xil_defaultlib  "../../../PLC_Project.srcs/sim_1/new/tb_Adder_33bit.vhd"
+
+# Do not sort compile order
+nosort

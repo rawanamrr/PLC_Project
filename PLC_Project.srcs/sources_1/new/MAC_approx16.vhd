@@ -11,10 +11,26 @@ end MAC_approx16;
 
 architecture Behavioral of MAC_approx16 is
 
+component FA is
+    Port ( x : in STD_LOGIC;
+           y : in STD_LOGIC;
+           c_in : in STD_LOGIC;
+           sum : out STD_LOGIC;
+           c_out : out STD_LOGIC);
+end component;
+
 component approxMult_16x16 is
     Port ( x : in STD_LOGIC_VECTOR (15 downto 0);
            y : in STD_LOGIC_VECTOR (15 downto 0);
            res : out STD_LOGIC_VECTOR (31 downto 0));
+end component;
+
+component SkipAdd_32bit is
+   Port ( x : in STD_LOGIC_VECTOR (31 downto 0);
+        y : in STD_LOGIC_VECTOR (31 downto 0);
+        cin: in std_logic;
+        res : out STD_LOGIC_VECTOR (31 downto 0);
+        cout: out std_logic);
 end component;
 
 component Adder_32Bits is
@@ -33,6 +49,14 @@ COMPONENT Adder_33Bits is
            cout : out STD_LOGIC);
 end COMPONENT;
 
+COMPONENT SkipAdd_33bit is
+   Port ( x : in STD_LOGIC_VECTOR (32 downto 0);
+     y : in STD_LOGIC_VECTOR (32 downto 0);
+     cin: in std_logic;
+     res : out STD_LOGIC_VECTOR (32 downto 0);
+     cout: out std_logic);
+end COMPONENT;
+
 COMPONENT Adder_34Bits is
     Port ( x : in STD_LOGIC_VECTOR (33 downto 0);
            y : in STD_LOGIC_VECTOR (33 downto 0);
@@ -40,6 +64,14 @@ COMPONENT Adder_34Bits is
            sum_out : out STD_LOGIC_VECTOR (33 downto 0);
            cout : out STD_LOGIC);
 end COMPONENT;
+
+component SkipAdd_34bit is
+   Port ( x : in STD_LOGIC_VECTOR (33 downto 0);
+     y : in STD_LOGIC_VECTOR (33 downto 0);
+     cin: in std_logic;
+     res : out STD_LOGIC_VECTOR (33 downto 0);
+     cout: out std_logic);
+end component;
 
 signal M1,M2,M3,M4,M5: std_logic_vector(31 downto 0);
 signal sum1,sum2,sum3,sum4,sum5: std_logic_vector(31 downto 0);
@@ -59,20 +91,18 @@ mult4: approxMult_16x16 port map(x4,w4,M4);
 mult5: approxMult_16x16 port map(x5,w5,M5);
 
 
-
-
-
-add1: Adder_32Bits port map(M1,M2,'0',sum1,c1);
-add2: Adder_32Bits port map(M3,M4,'0',sum2,c2);
-add3:Adder_32Bits port map(M5,temp,'0',sum3,c3);
+add1: SkipAdd_32bit port map(M1,M2,'0',sum1,c1);
+add2: SkipAdd_32bit port map(M3,M4,'0',sum2,c2);
+add3:SkipAdd_32bit port map(M5,temp,'0',sum3,c3);
 
 temp1<=c1&sum1;
 temp3<=c2&sum2;
 
-add331: Adder_33bits port map(temp1,temp3,'0',sum331,c331);
+add331: SkipAdd_33bit port map(temp1,temp3,'0',sum331,c331);
 temp4<='0'&c3&sum3;
 temp5<=c331&sum331;
-add341: Adder_34bits port map(temp4,temp5,'0',sum341,c341);
+
+add341: SkipAdd_34bit port map(temp4,temp5,'0',sum341,c341);
 
 macapproxout<=c341&sum341;
 

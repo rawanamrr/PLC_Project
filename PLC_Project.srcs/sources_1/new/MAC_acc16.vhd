@@ -17,6 +17,14 @@ component accMult_16x16 is
            res : out STD_LOGIC_VECTOR (31 downto 0));
 end component;
 
+component SkipAdd_32bit is
+   Port ( x : in STD_LOGIC_VECTOR (31 downto 0);
+        y : in STD_LOGIC_VECTOR (31 downto 0);
+        cin: in std_logic;
+        res : out STD_LOGIC_VECTOR (31 downto 0);
+        cout: out std_logic);
+end component;
+
 component Adder_32Bits is
     Port ( x : in STD_LOGIC_VECTOR (31 downto 0);
            y : in STD_LOGIC_VECTOR (31 downto 0);
@@ -24,6 +32,7 @@ component Adder_32Bits is
            sum_out : out STD_LOGIC_VECTOR (31 downto 0);
            cout : out STD_LOGIC);
 end component;
+
 COMPONENT Adder_33Bits is
     Port ( x : in STD_LOGIC_VECTOR (32 downto 0);
            y : in STD_LOGIC_VECTOR (32 downto 0);
@@ -58,9 +67,9 @@ mult5: accMult_16x16 port map(x5,w5,M5);
 
 
 
-add1: Adder_32Bits port map(M1,M2,'0',sum1,c1);
-add2: Adder_32Bits port map(M3,M4,'0',sum2,c2);
-add3:Adder_32Bits port map(M5,temp,'0',sum3,c3);
+add1: SkipAdd_32bit port map(M1,M2,'0',sum1,c1);
+add2: SkipAdd_32bit port map(M3,M4,'0',sum2,c2);
+add3:SkipAdd_32bit port map(M5,temp,'0',sum3,c3);
 
 temp1<=c1&sum1;
 temp3<=c2&sum2;

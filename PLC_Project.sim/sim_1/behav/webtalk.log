@@ -2,13 +2,13 @@
 # Webtalk v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Fri Dec 30 16:58:19 2022
-# Process ID: 7448
-# Current directory: C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav
-# Command line: wbtcv.exe -mode batch -source C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/xsim.dir/tb_neuralNetw_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/webtalk.log
-# Journal file: C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav\webtalk.jou
+# Start of session at: Sat Dec 31 03:14:56 2022
+# Process ID: 3680
+# Current directory: C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.sim/sim_1/behav/xsim.dir/tb_Adder_33bit_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.sim/sim_1/behav\webtalk.jou
 #-----------------------------------------------------------
-source C:/Users/Wegdan/Documents/GitHub/PLC_Project/PLC_Project.sim/sim_1/behav/xsim.dir/tb_neuralNetw_behav/webtalk/xsim_webtalk.tcl -notrace
-webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 49.008 ; gain = 0.082
-INFO: [Common 17-206] Exiting Webtalk at Fri Dec 30 16:58:24 2022...
+source C:/Users/Bassem/Documents/GitHub/PLC -notrace
+couldn't read file "C:/Users/Bassem/Documents/GitHub/PLC": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Sat Dec 31 03:14:56 2022...

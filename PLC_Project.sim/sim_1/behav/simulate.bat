@@ -1,6 +1,6 @@
 @echo off
-set xv_path=C:\\Xilinx\\Vivado\\2016.4\\bin
-call %xv_path%/xsim tb_neuralNetw_behav -key {Behavioral:sim_1:Functional:tb_neuralNetw} -tclbatch tb_neuralNetw.tcl -log simulate.log
+set xv_path=E:\\Lab\\Xillinx\\Vivado\\2016.4\\bin
+call %xv_path%/xsim tb_Adder_33bit_behav -key {Behavioral:sim_1:Functional:tb_Adder_33bit} -tclbatch tb_Adder_33bit.tcl -log simulate.log
 if "%errorlevel%"=="0" goto SUCCESS
 if "%errorlevel%"=="1" goto END
 :END
