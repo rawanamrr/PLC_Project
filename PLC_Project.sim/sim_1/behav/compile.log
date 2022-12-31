@@ -1,49 +1,73 @@
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity FA
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4Bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_4bit
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_2x2.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity accMult_2x2
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity approxMult_2x2
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Adder_3bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipADD_16bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity SkipADD_16bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4Bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Adder_4bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity UDM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Accurate.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Accurate
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_4x4.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity accMult_4x4
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity approxMult_4x4
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Adder_8bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipAdd_32bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity SkipAdd_32bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipADD_16bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SkipADD_16bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Adder_16bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity multiplierapprox88
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplieraccurate88.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity multiplieraccurate88
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_8x8v1.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity accMult_8x8v1
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity approxMult_8x8
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_16bit
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/SkipAdd_33bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity SkipAdd_33bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipAdd_32bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SkipAdd_32bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_Aprrox2x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MAC_Aprrox2x2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_acc2x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MAC_acc2x2
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_acc.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity MAC_acc
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_34bits.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Adder_34Bits
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/approxMult_16x162x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity approxMult_16x16_2x2
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Adder_33Bits
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_32Bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Adder_32Bits
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/accMult_16x162x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity accMult_16x16_2x2
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/accMult_16x16.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity accMult_16x16
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/SkipAdd_33bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SkipAdd_33bit
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity MAC_Aprrox
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity approxMult_16x16
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_34bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Adder_34Bits
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Act_16bits.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Act_16bits
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/SkipAdd_34bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity SkipAdd_34bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_approx162x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MAC_approx16_2x2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_acc162x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MAC_acc16_2x2
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_acc16.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity MAC_acc16
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/HiddenNeuron_approx2x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HiddenNeuron_approx2x2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/HiddenNeuron_acc2x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HiddenNeuron_acc2x2
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/HiddenNeuron_acc.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity HiddenNeuron_acc
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_approx16.vhd" into library xil_defaultlib
@@ -52,6 +76,10 @@ INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Pr
 INFO: [VRFC 10-307] analyzing entity HiddenNeuron_approx
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Act_32bits.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Act_32bits
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/NeuralNetw_approx2x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NeuralNetw_approx2x2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/NeuralNetw_acc2x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NeuralNetw_acc2x2
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/NeuralNetw_acc.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity NeuralNetw_acc
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/NeuralNetw_approx.vhd" into library xil_defaultlib

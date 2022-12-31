@@ -82,12 +82,15 @@ signal x2 :  STD_LOGIC_VECTOR (7 downto 0);
 signal w11,w12,w13,w14,w15,w21,w22,w23,w24,w25: STD_LOGIC_VECTOR (7 downto 0);--weights from input layer to hidden layer
 signal wh1,wh2,wh3,wh4,wh5 :  STD_LOGIC_VECTOR (15 downto 0); --weights from  hidden layer to output layer
 signal  bias :  STD_LOGIC_VECTOR (7 downto 0);
-signal ACCURATE_NETW:STD_LOGIC_VECTOR (31 downto 0);
-signal APPROXIMATE_NETW:STD_LOGIC_VECTOR (31 downto 0);
+signal ACCURATE_NETW,ACCURATE_NETW2x2:STD_LOGIC_VECTOR (31 downto 0);
+signal APPROXIMATE_NETW,APPROXIMATE_NETW2x2:STD_LOGIC_VECTOR (31 downto 0);
 signal clk: std_logic:='1';
 begin
-uut:NeuralNetw_acc port map(x1,x2, w11,w12,w13,w14,w15,w21,w22,w23,w24,w25,wh1,wh2,wh3,wh4,wh5,bias,clk,ACCURATE_NETW);
-uut2:NeuralNetw_approx port map(x1,x2, w11,w12,w13,w14,w15,w21,w22,w23,w24,w25,wh1,wh2,wh3,wh4,wh5,bias,clk,APPROXIMATE_NETW);
+acc:NeuralNetw_acc port map(x1,x2, w11,w12,w13,w14,w15,w21,w22,w23,w24,w25,wh1,wh2,wh3,wh4,wh5,bias,clk,ACCURATE_NETW);
+approx:NeuralNetw_approx port map(x1,x2, w11,w12,w13,w14,w15,w21,w22,w23,w24,w25,wh1,wh2,wh3,wh4,wh5,bias,clk,APPROXIMATE_NETW);
+acc2x2:NeuralNetw_acc2x2 port map(x1,x2, w11,w12,w13,w14,w15,w21,w22,w23,w24,w25,wh1,wh2,wh3,wh4,wh5,bias,clk,ACCURATE_NETW2x2);
+approx2x2:NeuralNetw_approx2x2 port map(x1,x2, w11,w12,w13,w14,w15,w21,w22,w23,w24,w25,wh1,wh2,wh3,wh4,wh5,bias,clk,APPROXIMATE_NETW2x2);
+
 stim_proc: process
 begin 
 --write test vsalues here also test mac16 acc and approx

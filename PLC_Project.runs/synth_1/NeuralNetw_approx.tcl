@@ -17,21 +17,24 @@ set_property ip_output_repo {c:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Pr
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
   {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd}
+  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd}
+  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd}
   {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4bit.vhd}
-  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd}
-  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd}
+  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd}
+  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd}
   {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipADD_16bit.vhd}
-  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd}
+  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd}
+  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd}
   {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipAdd_32bit.vhd}
-  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_Aprrox2x2.vhd}
-  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/approxMult_16x162x2.vhd}
-  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd}
+  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/SkipAdd_33bit.vhd}
+  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd}
+  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd}
   {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_34bits.vhd}
   {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Act_16bits.vhd}
-  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_approx162x2.vhd}
-  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/HiddenNeuron_approx2x2.vhd}
+  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_approx16.vhd}
+  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/HiddenNeuron_approx.vhd}
   {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Act_32bits.vhd}
-  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/NeuralNetw_approx2x2.vhd}
+  {C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/NeuralNetw_approx.vhd}
 }
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
@@ -40,9 +43,9 @@ read_xdc {{C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.
 set_property used_in_implementation false [get_files {{C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/constrs_1/imports/Xillinx/Basys3_Master.xdc}}]
 
 
-synth_design -top NeuralNetw_approx2x2 -part xc7k70tfbv676-1
+synth_design -top NeuralNetw_approx -part xc7k70tfbv676-1
 
 
-write_checkpoint -force -noxdef NeuralNetw_approx2x2.dcp
+write_checkpoint -force -noxdef NeuralNetw_approx.dcp
 
-catch { report_utilization -file NeuralNetw_approx2x2_utilization_synth.rpt -pb NeuralNetw_approx2x2_utilization_synth.pb }
+catch { report_utilization -file NeuralNetw_approx_utilization_synth.rpt -pb NeuralNetw_approx_utilization_synth.pb }

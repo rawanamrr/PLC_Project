@@ -35,3 +35,13 @@ set_property src_info {type:XDC file:1 line:326 export:INPUT save:INPUT read:REA
 set_switching_activity -deassert_resets
 set_property src_info {type:XDC file:1 line:328 export:INPUT save:INPUT read:READ} [current_design]
 set_switching_activity -deassert_resets
+set_property src_info {type:XDC file:1 line:330 export:INPUT save:INPUT read:READ} [current_design]
+set_switching_activity -deassert_resets
+set_property src_info {type:XDC file:1 line:332 export:INPUT save:INPUT read:READ} [current_design]
+set_switching_activity -deassert_resets
+set_property src_info {type:XDC file:1 line:334 export:INPUT save:INPUT read:READ} [current_design]
+set_switching_activity -deassert_resets
+set_property src_info {type:XDC file:1 line:336 export:INPUT save:INPUT read:READ} [current_design]
+set_switching_activity -deassert_resets
+set_property src_info {type:XDC file:1 line:338 export:INPUT save:INPUT read:READ} [current_design]
+set_switching_activity -deassert_resets

@@ -2,8 +2,8 @@
 # Webtalk v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Sat Dec 31 23:16:12 2022
-# Process ID: 19828
+# Start of session at: Sun Jan 01 00:15:00 2023
+# Process ID: 9096
 # Current directory: C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.sim/sim_1/behav
 # Command line: wbtcv.exe -mode batch -source C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.sim/sim_1/behav/xsim.dir/tb_neuralNetw_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.sim/sim_1/behav/webtalk.log
@@ -11,4 +11,4 @@
 #-----------------------------------------------------------
 source C:/Users/Bassem/Documents/GitHub/PLC -notrace
 couldn't read file "C:/Users/Bassem/Documents/GitHub/PLC": no such file or directory
-INFO: [Common 17-206] Exiting Webtalk at Sat Dec 31 23:16:12 2022...
+INFO: [Common 17-206] Exiting Webtalk at Sun Jan 01 00:15:00 2023...

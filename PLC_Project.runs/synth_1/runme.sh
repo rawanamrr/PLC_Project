@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log NeuralNetw_approx2x2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source NeuralNetw_approx2x2.tcl
+EAStep vivado -log NeuralNetw_approx.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source NeuralNetw_approx.tcl

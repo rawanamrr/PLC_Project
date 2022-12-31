@@ -2,11 +2,11 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Sat Dec 31 23:11:49 2022
-# Process ID: 16816
+# Start of session at: Sat Dec 31 23:37:26 2022
+# Process ID: 8828
 # Current directory: C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.runs/synth_1
-# Command line: vivado.exe -log NeuralNetw_approx2x2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source NeuralNetw_approx2x2.tcl
-# Log file: C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.runs/synth_1/NeuralNetw_approx2x2.vds
+# Command line: vivado.exe -log NeuralNetw_approx.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source NeuralNetw_approx.tcl
+# Log file: C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.runs/synth_1/NeuralNetw_approx.vds
 # Journal file: C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source NeuralNetw_approx2x2.tcl -notrace
+source NeuralNetw_approx.tcl -notrace

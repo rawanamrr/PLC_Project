@@ -1,7 +1,4 @@
-Running: xsim.dir/tb_neuralNetw_behav/xsimk.exe -simmode gui -wdb tb_neuralNetw_behav.wdb -simrunnum 0 -socket 52385
+Running: xsim.dir/tb_neuralNetw_behav/xsimk.exe -simmode gui -wdb tb_neuralNetw_behav.wdb -simrunnum 0 -socket 52961
 Design successfully loaded
-Design Loading Memory Usage: 21288 KB (Peak: 21288 KB)
-Design Loading CPU Usage: 156 ms
-Simulation completed
-Simulation Memory Usage: 25432 KB (Peak: 25432 KB)
-Simulation CPU Usage: 249 ms
+Design Loading Memory Usage: 40628 KB (Peak: 40628 KB)
+Design Loading CPU Usage: 171 ms
