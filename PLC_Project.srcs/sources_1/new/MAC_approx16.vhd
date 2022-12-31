@@ -102,7 +102,7 @@ add331: SkipAdd_33bit port map(temp1,temp3,'0',sum331,c331);
 temp4<='0'&c3&sum3;
 temp5<=c331&sum331;
 
-add341: SkipAdd_34bit port map(temp4,temp5,'0',sum341,c341);
+add341: Adder_34Bits port map(temp4,temp5,'0',sum341,c341);
 
 macapproxout<=c341&sum341;
 

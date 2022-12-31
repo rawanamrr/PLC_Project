@@ -33,6 +33,14 @@ component Adder_32Bits is
            cout : out STD_LOGIC);
 end component;
 
+COMPONENT SkipAdd_33bit is
+   Port ( x : in STD_LOGIC_VECTOR (32 downto 0);
+     y : in STD_LOGIC_VECTOR (32 downto 0);
+     cin: in std_logic;
+     res : out STD_LOGIC_VECTOR (32 downto 0);
+     cout: out std_logic);
+end COMPONENT;
+
 COMPONENT Adder_33Bits is
     Port ( x : in STD_LOGIC_VECTOR (32 downto 0);
            y : in STD_LOGIC_VECTOR (32 downto 0);
@@ -74,7 +82,7 @@ add3:SkipAdd_32bit port map(M5,temp,'0',sum3,c3);
 temp1<=c1&sum1;
 temp3<=c2&sum2;
 
-add331: Adder_33bits port map(temp1,temp3,'0',sum331,c331);
+add331: Adder_33Bits port map(temp1,temp3,'0',sum331,c331);
 temp4<='0'&c3&sum3;
 temp5<=c331&sum331;
 add341: Adder_34bits port map(temp4,temp5,'0',sum341,c341);

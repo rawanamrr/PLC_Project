@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log NeuralNetw_approx.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source NeuralNetw_approx.tcl
+    with args -log NeuralNetw_approx2x2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source NeuralNetw_approx2x2.tcl
 
 
 ****** Vivado v2016.4 (64-bit)
@@ -8,149 +8,155 @@
   **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 
-source NeuralNetw_approx.tcl -notrace
-Command: synth_design -top NeuralNetw_approx -part xc7k70tfbv676-1
+source NeuralNetw_approx2x2.tcl -notrace
+Command: synth_design -top NeuralNetw_approx2x2 -part xc7k70tfbv676-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 17480 
+INFO: Helper process launched with PID 13272 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 303.480 ; gain = 93.926
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 303.262 ; gain = 93.082
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'NeuralNetw_approx' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/NeuralNetw_approx.vhd:15]
-INFO: [Synth 8-3491] module 'HiddenNeuron_approx' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/HiddenNeuron_approx.vhd:14' bound to instance 'HN_1' of component 'HiddenNeuron_approx' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/NeuralNetw_approx.vhd:48]
-INFO: [Synth 8-638] synthesizing module 'HiddenNeuron_approx' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/HiddenNeuron_approx.vhd:23]
-INFO: [Synth 8-3491] module 'MAC_Aprrox' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd:7' bound to instance 'MAC' of component 'MAC_Aprrox' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/HiddenNeuron_approx.vhd:39]
-INFO: [Synth 8-638] synthesizing module 'MAC_Aprrox' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd:16]
-INFO: [Synth 8-3491] module 'approxMult_8x8' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd:13' bound to instance 'mult1' of component 'approxMult_8x8' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd:59]
-INFO: [Synth 8-638] synthesizing module 'approxMult_8x8' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd:19]
-INFO: [Synth 8-3491] module 'approxMult_4x4' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd:34' bound to instance 'Partial1' of component 'approxMult_4x4' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd:53]
-INFO: [Synth 8-638] synthesizing module 'approxMult_4x4' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd:40]
-INFO: [Synth 8-3491] module 'approxMult_2x2' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd:34' bound to instance 'mult1' of component 'approxMult_2x2' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd:82]
-INFO: [Synth 8-638] synthesizing module 'approxMult_2x2' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'approxMult_2x2' (1#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd:40]
-INFO: [Synth 8-3491] module 'approxMult_2x2' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd:34' bound to instance 'mult2' of component 'approxMult_2x2' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd:83]
-INFO: [Synth 8-3491] module 'approxMult_2x2' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd:34' bound to instance 'mult3' of component 'approxMult_2x2' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd:84]
-INFO: [Synth 8-3491] module 'approxMult_2x2' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_2x2.vhd:34' bound to instance 'mult4' of component 'approxMult_2x2' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd:85]
-INFO: [Synth 8-3491] module 'Adder_3bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd:7' bound to instance 'Adder3Bit_1' of component 'Adder_3bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd:88]
-INFO: [Synth 8-638] synthesizing module 'Adder_3bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd:16]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'NeuralNetw_approx2x2' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/NeuralNetw_approx2x2.vhd:15]
+INFO: [Synth 8-3491] module 'HiddenNeuron_approx2x2' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/HiddenNeuron_approx2x2.vhd:14' bound to instance 'HN_1' of component 'HiddenNeuron_approx2x2' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/NeuralNetw_approx2x2.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'HiddenNeuron_approx2x2' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/HiddenNeuron_approx2x2.vhd:23]
+INFO: [Synth 8-3491] module 'MAC_Aprrox2x2' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_Aprrox2x2.vhd:7' bound to instance 'MAC' of component 'MAC_Aprrox2x2' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/HiddenNeuron_approx2x2.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'MAC_Aprrox2x2' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_Aprrox2x2.vhd:16]
+INFO: [Synth 8-3491] module 'multiplierapprox88' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:6' bound to instance 'mult1' of component 'multiplierapprox88' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_Aprrox2x2.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'multiplierapprox88' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:12]
+INFO: [Synth 8-3491] module 'UDM' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd:26' bound to instance 'a1' of component 'UDM' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'UDM' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'UDM' (1#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd:32]
+INFO: [Synth 8-3491] module 'UDM' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd:26' bound to instance 'a2' of component 'UDM' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:114]
+INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'add1' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:42]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
 INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:42]
 INFO: [Synth 8-256] done synthesizing module 'FA' (2#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:42]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd:32]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd:32]
-INFO: [Synth 8-256] done synthesizing module 'Adder_3bit' (3#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd:16]
-INFO: [Synth 8-3491] module 'Adder_4bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4bit.vhd:7' bound to instance 'Adder4Bit_1' of component 'Adder_4bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd:92]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'Adder_16bit' (3#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:42]
+INFO: [Synth 8-3491] module 'UDM' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd:26' bound to instance 'a3' of component 'UDM' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:122]
+INFO: [Synth 8-3491] module 'UDM' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd:26' bound to instance 'a4' of component 'UDM' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:123]
+INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'add2' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'add3' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:129]
+INFO: [Synth 8-3491] module 'UDM' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd:26' bound to instance 'a5' of component 'UDM' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:132]
+INFO: [Synth 8-3491] module 'UDM' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd:26' bound to instance 'a6' of component 'UDM' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:133]
+INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'add4' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+INFO: [Synth 8-3491] module 'UDM' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd:26' bound to instance 'a7' of component 'UDM' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:141]
+INFO: [Synth 8-3491] module 'UDM' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd:26' bound to instance 'a8' of component 'UDM' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:142]
+INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'add5' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'add6' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:148]
+INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'add7' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:150]
+INFO: [Synth 8-3491] module 'UDM' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd:26' bound to instance 'a9' of component 'UDM' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:153]
+INFO: [Synth 8-3491] module 'UDM' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd:26' bound to instance 'a10' of component 'UDM' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:154]
+INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'add8' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:159]
+INFO: [Synth 8-3491] module 'UDM' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd:26' bound to instance 'a11' of component 'UDM' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:162]
+INFO: [Synth 8-3491] module 'UDM' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd:26' bound to instance 'a12' of component 'UDM' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:163]
+INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'add9' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:168]
+INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'add10' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:169]
+INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'add11' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:171]
+INFO: [Synth 8-3491] module 'UDM' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd:26' bound to instance 'a13' of component 'UDM' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:174]
+INFO: [Synth 8-3491] module 'UDM' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd:26' bound to instance 'a14' of component 'UDM' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:175]
+INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'add12' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:180]
+INFO: [Synth 8-3491] module 'UDM' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd:26' bound to instance 'a15' of component 'UDM' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:183]
+INFO: [Synth 8-3491] module 'UDM' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/UDM.vhd:26' bound to instance 'a116' of component 'UDM' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:184]
+INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'add13' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:189]
+INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'add14' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:190]
+INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'add15' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:192]
+INFO: [Synth 8-256] done synthesizing module 'multiplierapprox88' (4#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:12]
+INFO: [Synth 8-3491] module 'multiplierapprox88' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:6' bound to instance 'mult2' of component 'multiplierapprox88' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_Aprrox2x2.vhd:41]
+INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'sum1' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_Aprrox2x2.vhd:43]
+INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'sum2' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_Aprrox2x2.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'MAC_Aprrox2x2' (5#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_Aprrox2x2.vhd:16]
+INFO: [Synth 8-3491] module 'Act_16bits' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Act_16bits.vhd:25' bound to instance 'activeFn' of component 'Act_16bits' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/HiddenNeuron_approx2x2.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'Act_16bits' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Act_16bits.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'Act_16bits' (6#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Act_16bits.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'HiddenNeuron_approx2x2' (7#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/HiddenNeuron_approx2x2.vhd:23]
+INFO: [Synth 8-3491] module 'HiddenNeuron_approx2x2' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/HiddenNeuron_approx2x2.vhd:14' bound to instance 'HN_2' of component 'HiddenNeuron_approx2x2' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/NeuralNetw_approx2x2.vhd:49]
+INFO: [Synth 8-3491] module 'HiddenNeuron_approx2x2' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/HiddenNeuron_approx2x2.vhd:14' bound to instance 'HN_3' of component 'HiddenNeuron_approx2x2' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/NeuralNetw_approx2x2.vhd:50]
+INFO: [Synth 8-3491] module 'HiddenNeuron_approx2x2' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/HiddenNeuron_approx2x2.vhd:14' bound to instance 'HN_4' of component 'HiddenNeuron_approx2x2' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/NeuralNetw_approx2x2.vhd:51]
+INFO: [Synth 8-3491] module 'HiddenNeuron_approx2x2' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/HiddenNeuron_approx2x2.vhd:14' bound to instance 'HN_5' of component 'HiddenNeuron_approx2x2' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/NeuralNetw_approx2x2.vhd:52]
+INFO: [Synth 8-3491] module 'MAC_approx16_2x2' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_approx162x2.vhd:5' bound to instance 'MAC' of component 'MAC_approx16_2x2' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/NeuralNetw_approx2x2.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'MAC_approx16_2x2' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_approx162x2.vhd:12]
+INFO: [Synth 8-3491] module 'approxMult_16x16_2x2' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/approxMult_16x162x2.vhd:15' bound to instance 'mult1' of component 'approxMult_16x16_2x2' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_approx162x2.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'approxMult_16x16_2x2' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/approxMult_16x162x2.vhd:21]
+INFO: [Synth 8-3491] module 'multiplierapprox88' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:6' bound to instance 'mult1' of component 'multiplierapprox88' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/approxMult_16x162x2.vhd:55]
+INFO: [Synth 8-3491] module 'multiplierapprox88' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:6' bound to instance 'mult2' of component 'multiplierapprox88' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/approxMult_16x162x2.vhd:56]
+INFO: [Synth 8-3491] module 'multiplierapprox88' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:6' bound to instance 'mult3' of component 'multiplierapprox88' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/approxMult_16x162x2.vhd:57]
+INFO: [Synth 8-3491] module 'multiplierapprox88' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:6' bound to instance 'mult4' of component 'multiplierapprox88' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/approxMult_16x162x2.vhd:58]
+INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'ADDSUB1' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/approxMult_16x162x2.vhd:64]
+INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'ADDSUB2' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/approxMult_16x162x2.vhd:72]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'KAMEL16ADD' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/approxMult_16x162x2.vhd:74]
+INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'ADDNOSRES' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/approxMult_16x162x2.vhd:81]
+INFO: [Synth 8-256] done synthesizing module 'approxMult_16x16_2x2' (8#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/approxMult_16x162x2.vhd:21]
+INFO: [Synth 8-3491] module 'approxMult_16x16_2x2' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/approxMult_16x162x2.vhd:15' bound to instance 'mult2' of component 'approxMult_16x16_2x2' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_approx162x2.vhd:64]
+INFO: [Synth 8-3491] module 'approxMult_16x16_2x2' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/approxMult_16x162x2.vhd:15' bound to instance 'mult3' of component 'approxMult_16x16_2x2' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_approx162x2.vhd:65]
+INFO: [Synth 8-3491] module 'approxMult_16x16_2x2' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/approxMult_16x162x2.vhd:15' bound to instance 'mult4' of component 'approxMult_16x16_2x2' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_approx162x2.vhd:66]
+INFO: [Synth 8-3491] module 'approxMult_16x16_2x2' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/approxMult_16x162x2.vhd:15' bound to instance 'mult5' of component 'approxMult_16x16_2x2' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_approx162x2.vhd:67]
+INFO: [Synth 8-3491] module 'SkipAdd_32bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipAdd_32bit.vhd:34' bound to instance 'add1' of component 'SkipAdd_32bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_approx162x2.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'SkipAdd_32bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipAdd_32bit.vhd:42]
+INFO: [Synth 8-3491] module 'SkipADD_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipADD_16bit.vhd:34' bound to instance 'CSA1' of component 'SkipADD_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipAdd_32bit.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'SkipADD_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipADD_16bit.vhd:42]
+INFO: [Synth 8-3491] module 'Adder_4bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4bit.vhd:7' bound to instance 'ADDWithSkip1' of component 'Adder_4bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipADD_16bit.vhd:68]
 INFO: [Synth 8-638] synthesizing module 'Adder_4bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4bit.vhd:16]
 INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4bit.vhd:32]
 INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4bit.vhd:32]
 INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4bit.vhd:32]
 INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4bit.vhd:32]
-INFO: [Synth 8-256] done synthesizing module 'Adder_4bit' (4#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4bit.vhd:16]
-INFO: [Synth 8-3491] module 'Adder_3bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_3bit.vhd:7' bound to instance 'Adder4Bit_2' of component 'Adder_3bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd:96]
-INFO: [Synth 8-256] done synthesizing module 'approxMult_4x4' (5#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd:40]
-INFO: [Synth 8-3491] module 'approxMult_4x4' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd:34' bound to instance 'Partial2' of component 'approxMult_4x4' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd:54]
-INFO: [Synth 8-3491] module 'approxMult_4x4' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd:34' bound to instance 'Partial3' of component 'approxMult_4x4' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd:55]
-INFO: [Synth 8-3491] module 'approxMult_4x4' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_4x4.vhd:34' bound to instance 'Partial4' of component 'approxMult_4x4' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd:56]
-INFO: [Synth 8-3491] module 'Adder_8bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd:7' bound to instance 'ADDSUB1' of component 'Adder_8bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd:60]
-INFO: [Synth 8-638] synthesizing module 'Adder_8bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd:16]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd:32]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd:32]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd:32]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd:32]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd:32]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd:32]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd:32]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd:32]
-INFO: [Synth 8-256] done synthesizing module 'Adder_8bit' (6#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd:16]
-INFO: [Synth 8-3491] module 'Adder_8bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd:7' bound to instance 'ADDSUB2' of component 'Adder_8bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd:65]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'KAMEL8ADD' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd:66]
-INFO: [Synth 8-3491] module 'Adder_8bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_8bit.vhd:7' bound to instance 'ADDNOSRES' of component 'Adder_8bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd:72]
-INFO: [Synth 8-256] done synthesizing module 'approxMult_8x8' (7#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd:19]
-INFO: [Synth 8-3491] module 'approxMult_8x8' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd:13' bound to instance 'mult2' of component 'approxMult_8x8' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd:60]
-INFO: [Synth 8-3491] module 'SkipADD_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipADD_16bit.vhd:34' bound to instance 'sum1' of component 'SkipADD_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd:63]
-INFO: [Synth 8-638] synthesizing module 'SkipADD_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipADD_16bit.vhd:42]
-INFO: [Synth 8-3491] module 'Adder_4bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4bit.vhd:7' bound to instance 'ADDWithSkip1' of component 'Adder_4bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipADD_16bit.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'Adder_4bit' (9#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4bit.vhd:16]
 INFO: [Synth 8-3491] module 'Adder_4bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4bit.vhd:7' bound to instance 'ADDWithSkip2' of component 'Adder_4bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipADD_16bit.vhd:73]
 INFO: [Synth 8-3491] module 'Adder_4bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4bit.vhd:7' bound to instance 'ADDWithSkip3' of component 'Adder_4bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipADD_16bit.vhd:78]
 INFO: [Synth 8-3491] module 'Adder_4bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_4bit.vhd:7' bound to instance 'ADDWithSkip4' of component 'Adder_4bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipADD_16bit.vhd:83]
-INFO: [Synth 8-256] done synthesizing module 'SkipADD_16bit' (8#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipADD_16bit.vhd:42]
-INFO: [Synth 8-3491] module 'SkipADD_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipADD_16bit.vhd:34' bound to instance 'sum2' of component 'SkipADD_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd:64]
-INFO: [Synth 8-256] done synthesizing module 'MAC_Aprrox' (9#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_Aprrox.vhd:16]
-INFO: [Synth 8-3491] module 'Act_16bits' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Act_16bits.vhd:25' bound to instance 'activeFn' of component 'Act_16bits' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/HiddenNeuron_approx.vhd:40]
-INFO: [Synth 8-638] synthesizing module 'Act_16bits' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Act_16bits.vhd:30]
-INFO: [Synth 8-256] done synthesizing module 'Act_16bits' (10#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Act_16bits.vhd:30]
-INFO: [Synth 8-256] done synthesizing module 'HiddenNeuron_approx' (11#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/HiddenNeuron_approx.vhd:23]
-INFO: [Synth 8-3491] module 'HiddenNeuron_approx' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/HiddenNeuron_approx.vhd:14' bound to instance 'HN_2' of component 'HiddenNeuron_approx' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/NeuralNetw_approx.vhd:49]
-INFO: [Synth 8-3491] module 'HiddenNeuron_approx' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/HiddenNeuron_approx.vhd:14' bound to instance 'HN_3' of component 'HiddenNeuron_approx' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/NeuralNetw_approx.vhd:50]
-INFO: [Synth 8-3491] module 'HiddenNeuron_approx' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/HiddenNeuron_approx.vhd:14' bound to instance 'HN_4' of component 'HiddenNeuron_approx' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/NeuralNetw_approx.vhd:51]
-INFO: [Synth 8-3491] module 'HiddenNeuron_approx' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/HiddenNeuron_approx.vhd:14' bound to instance 'HN_5' of component 'HiddenNeuron_approx' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/NeuralNetw_approx.vhd:52]
-INFO: [Synth 8-3491] module 'MAC_approx16' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_approx16.vhd:5' bound to instance 'MAC' of component 'MAC_approx16' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/NeuralNetw_approx.vhd:55]
-INFO: [Synth 8-638] synthesizing module 'MAC_approx16' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_approx16.vhd:12]
-INFO: [Synth 8-3491] module 'approxMult_16x16' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd:15' bound to instance 'mult1' of component 'approxMult_16x16' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_approx16.vhd:87]
-INFO: [Synth 8-638] synthesizing module 'approxMult_16x16' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd:21]
-INFO: [Synth 8-3491] module 'approxMult_8x8' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd:13' bound to instance 'mult1' of component 'approxMult_8x8' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd:63]
-INFO: [Synth 8-3491] module 'approxMult_8x8' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd:13' bound to instance 'mult2' of component 'approxMult_8x8' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd:64]
-INFO: [Synth 8-3491] module 'approxMult_8x8' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd:13' bound to instance 'mult3' of component 'approxMult_8x8' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd:65]
-INFO: [Synth 8-3491] module 'approxMult_8x8' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_8x8.vhd:13' bound to instance 'mult4' of component 'approxMult_8x8' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd:66]
-INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'ADDSUB1' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd:72]
-INFO: [Synth 8-638] synthesizing module 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:42]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:57]
-INFO: [Synth 8-256] done synthesizing module 'Adder_16bit' (12#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:42]
-INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'ADDSUB2' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd:80]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'KAMEL16ADD' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd:82]
-INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_16bit.vhd:34' bound to instance 'ADDNOSRES' of component 'Adder_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd:89]
-INFO: [Synth 8-256] done synthesizing module 'approxMult_16x16' (13#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd:21]
-INFO: [Synth 8-3491] module 'approxMult_16x16' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd:15' bound to instance 'mult2' of component 'approxMult_16x16' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_approx16.vhd:88]
-INFO: [Synth 8-3491] module 'approxMult_16x16' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd:15' bound to instance 'mult3' of component 'approxMult_16x16' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_approx16.vhd:89]
-INFO: [Synth 8-3491] module 'approxMult_16x16' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd:15' bound to instance 'mult4' of component 'approxMult_16x16' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_approx16.vhd:90]
-INFO: [Synth 8-3491] module 'approxMult_16x16' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/approxMult_16x16.vhd:15' bound to instance 'mult5' of component 'approxMult_16x16' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_approx16.vhd:91]
-INFO: [Synth 8-3491] module 'SkipAdd_32bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipAdd_32bit.vhd:34' bound to instance 'add1' of component 'SkipAdd_32bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_approx16.vhd:94]
-INFO: [Synth 8-638] synthesizing module 'SkipAdd_32bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipAdd_32bit.vhd:42]
-INFO: [Synth 8-3491] module 'SkipADD_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipADD_16bit.vhd:34' bound to instance 'CSA1' of component 'SkipADD_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipAdd_32bit.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'SkipADD_16bit' (10#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipADD_16bit.vhd:42]
 INFO: [Synth 8-3491] module 'SkipADD_16bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipADD_16bit.vhd:34' bound to instance 'CSA2' of component 'SkipADD_16bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipAdd_32bit.vhd:58]
-INFO: [Synth 8-256] done synthesizing module 'SkipAdd_32bit' (14#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipAdd_32bit.vhd:42]
-INFO: [Synth 8-3491] module 'SkipAdd_32bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipAdd_32bit.vhd:34' bound to instance 'add2' of component 'SkipAdd_32bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_approx16.vhd:95]
-INFO: [Synth 8-3491] module 'SkipAdd_32bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipAdd_32bit.vhd:34' bound to instance 'add3' of component 'SkipAdd_32bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_approx16.vhd:96]
-INFO: [Synth 8-3491] module 'SkipAdd_33bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/SkipAdd_33bit.vhd:34' bound to instance 'add331' of component 'SkipAdd_33bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_approx16.vhd:101]
-INFO: [Synth 8-638] synthesizing module 'SkipAdd_33bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/SkipAdd_33bit.vhd:42]
-INFO: [Synth 8-3491] module 'SkipAdd_32bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipAdd_32bit.vhd:34' bound to instance 'CSka' of component 'SkipAdd_32bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/SkipAdd_33bit.vhd:65]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/SkipAdd_33bit.vhd:66]
-INFO: [Synth 8-256] done synthesizing module 'SkipAdd_33bit' (15#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/SkipAdd_33bit.vhd:42]
-INFO: [Synth 8-3491] module 'SkipAdd_34bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/SkipAdd_34bit.vhd:34' bound to instance 'add341' of component 'SkipAdd_34bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_approx16.vhd:105]
-INFO: [Synth 8-638] synthesizing module 'SkipAdd_34bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/SkipAdd_34bit.vhd:42]
-INFO: [Synth 8-3491] module 'SkipAdd_33bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/SkipAdd_33bit.vhd:34' bound to instance 'CSka' of component 'SkipAdd_33bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/SkipAdd_34bit.vhd:65]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/SkipAdd_34bit.vhd:66]
-INFO: [Synth 8-256] done synthesizing module 'SkipAdd_34bit' (16#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/SkipAdd_34bit.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'MAC_approx16' (17#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/MAC_approx16.vhd:12]
-INFO: [Synth 8-3491] module 'Act_32bits' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Act_32bits.vhd:25' bound to instance 'aciveFn' of component 'Act_32bits' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/NeuralNetw_approx.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'SkipAdd_32bit' (11#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipAdd_32bit.vhd:42]
+INFO: [Synth 8-3491] module 'SkipAdd_32bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipAdd_32bit.vhd:34' bound to instance 'add2' of component 'SkipAdd_32bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_approx162x2.vhd:73]
+INFO: [Synth 8-3491] module 'SkipAdd_32bit' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/SkipAdd_32bit.vhd:34' bound to instance 'add3' of component 'SkipAdd_32bit' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_approx162x2.vhd:74]
+INFO: [Synth 8-3491] module 'Adder_33Bits' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd:15' bound to instance 'add331' of component 'Adder_33Bits' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_approx162x2.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'Adder_33Bits' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd:23]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd:38]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd:38]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd:38]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd:38]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd:38]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd:38]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd:38]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd:38]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd:38]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd:38]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd:38]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd:38]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd:38]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/FA.vhd:34' bound to instance 'adder1' of component 'FA' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd:38]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'Adder_33Bits' (12#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_33bits.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'Adder_34Bits' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_34bits.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'Adder_34Bits' (13#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Adder_34bits.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'MAC_approx16_2x2' (14#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/MAC_approx162x2.vhd:12]
 INFO: [Synth 8-638] synthesizing module 'Act_32bits' [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Act_32bits.vhd:30]
-INFO: [Synth 8-256] done synthesizing module 'Act_32bits' (18#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Act_32bits.vhd:30]
-INFO: [Synth 8-256] done synthesizing module 'NeuralNetw_approx' (19#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/NeuralNetw_approx.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Act_32bits' (15#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/Act_32bits.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'NeuralNetw_approx2x2' (16#1) [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/imports/new/NeuralNetw_approx2x2.vhd:15]
 WARNING: [Synth 8-3331] design Act_32bits has unconnected port in1[1]
 WARNING: [Synth 8-3331] design Act_32bits has unconnected port in1[0]
 WARNING: [Synth 8-3331] design SkipAdd_32bit has unconnected port cin
-WARNING: [Synth 8-3331] design SkipAdd_33bit has unconnected port cin
-WARNING: [Synth 8-3331] design SkipAdd_34bit has unconnected port cin
-WARNING: [Synth 8-3331] design NeuralNetw_approx has unconnected port clk
+WARNING: [Synth 8-3331] design NeuralNetw_approx2x2 has unconnected port clk
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 341.809 ; gain = 132.254
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 341.520 ; gain = 131.340
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -159,8 +165,109 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin add1:x[15] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:x[14] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:x[13] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:x[12] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:x[11] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:x[10] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:x[9] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:x[8] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:x[7] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:x[6] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:x[5] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:x[4] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:x[3] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:y[15] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:y[14] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:y[13] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:y[12] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:y[11] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:y[10] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:y[9] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:y[8] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:y[7] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:y[6] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:y[5] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:y[1] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add1:y[0] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin add2:x[15] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:x[14] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:x[13] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:x[12] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:x[11] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:x[10] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:x[9] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:x[8] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:x[7] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:x[3] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:x[2] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:x[1] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:x[0] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:y[15] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:y[14] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:y[13] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:y[12] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:y[11] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:y[10] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:y[9] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:y[5] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:y[4] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:y[3] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:y[2] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:y[1] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add2:y[0] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin add4:x[15] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:x[14] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:x[13] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:x[12] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:x[11] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:x[10] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:x[9] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:x[8] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:x[7] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:x[6] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:x[5] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:x[1] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:x[0] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:y[15] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:y[14] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:y[13] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:y[12] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:y[11] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:y[10] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:y[9] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:y[8] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:y[7] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:y[3] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:y[2] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:y[1] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add4:y[0] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:138]
+WARNING: [Synth 8-3295] tying undriven pin add5:x[15] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+WARNING: [Synth 8-3295] tying undriven pin add5:x[14] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+WARNING: [Synth 8-3295] tying undriven pin add5:x[13] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+WARNING: [Synth 8-3295] tying undriven pin add5:x[12] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+WARNING: [Synth 8-3295] tying undriven pin add5:x[11] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+WARNING: [Synth 8-3295] tying undriven pin add5:x[10] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+WARNING: [Synth 8-3295] tying undriven pin add5:x[9] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+WARNING: [Synth 8-3295] tying undriven pin add5:x[5] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+WARNING: [Synth 8-3295] tying undriven pin add5:x[4] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+WARNING: [Synth 8-3295] tying undriven pin add5:x[3] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+WARNING: [Synth 8-3295] tying undriven pin add5:x[2] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+WARNING: [Synth 8-3295] tying undriven pin add5:x[1] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+WARNING: [Synth 8-3295] tying undriven pin add5:x[0] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+WARNING: [Synth 8-3295] tying undriven pin add5:y[15] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+WARNING: [Synth 8-3295] tying undriven pin add5:y[14] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+WARNING: [Synth 8-3295] tying undriven pin add5:y[13] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+WARNING: [Synth 8-3295] tying undriven pin add5:y[12] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+WARNING: [Synth 8-3295] tying undriven pin add5:y[11] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+WARNING: [Synth 8-3295] tying undriven pin add5:y[7] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+WARNING: [Synth 8-3295] tying undriven pin add5:y[6] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+WARNING: [Synth 8-3295] tying undriven pin add5:y[5] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+WARNING: [Synth 8-3295] tying undriven pin add5:y[4] to constant 0 [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/sources_1/new/multiplierapprox88.vhd:147]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 341.809 ; gain = 132.254
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 341.520 ; gain = 131.340
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7k70tfbv676-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -169,32 +276,32 @@ Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/constrs_1/imports/Xillinx/Basys3_Master.xdc]
 Finished Parsing XDC File [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/constrs_1/imports/Xillinx/Basys3_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/constrs_1/imports/Xillinx/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/NeuralNetw_approx_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/NeuralNetw_approx_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.srcs/constrs_1/imports/Xillinx/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/NeuralNetw_approx2x2_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/NeuralNetw_approx2x2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 781.176 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 803.930 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 781.176 ; gain = 571.621
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 803.930 ; gain = 593.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k70tfbv676-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 781.176 ; gain = 571.621
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 803.930 ; gain = 593.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 781.176 ; gain = 571.621
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 803.930 ; gain = 593.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 781.176 ; gain = 571.621
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 803.930 ; gain = 593.750
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -207,7 +314,7 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---XORs : 
-	   2 Input      1 Bit         XORs := 5036  
+	   2 Input      1 Bit         XORs := 15536 
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 5     
@@ -245,14 +352,9 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3331] design Act_32bits has unconnected port in1[1]
-WARNING: [Synth 8-3331] design Act_32bits has unconnected port in1[0]
-WARNING: [Synth 8-3331] design SkipAdd_34bit has unconnected port cin
-WARNING: [Synth 8-3331] design SkipAdd_33bit has unconnected port cin
-WARNING: [Synth 8-3331] design SkipAdd_32bit has unconnected port cin
-WARNING: [Synth 8-3331] design NeuralNetw_approx has unconnected port clk
+WARNING: [Synth 8-3331] design NeuralNetw_approx2x2 has unconnected port clk
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:23 . Memory (MB): peak = 781.176 ; gain = 571.621
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 803.930 ; gain = 593.750
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -267,10 +369,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:40 ; elapsed = 00:01:44 . Memory (MB): peak = 781.176 ; gain = 571.621
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 803.930 ; gain = 593.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:41 ; elapsed = 00:01:45 . Memory (MB): peak = 781.176 ; gain = 571.621
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 803.930 ; gain = 593.750
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -282,7 +384,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:47 ; elapsed = 00:01:51 . Memory (MB): peak = 1040.789 ; gain = 831.234
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1055.859 ; gain = 845.680
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -306,7 +408,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:48 ; elapsed = 00:01:53 . Memory (MB): peak = 1040.789 ; gain = 831.234
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1055.859 ; gain = 845.680
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -319,7 +421,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:48 ; elapsed = 00:01:53 . Memory (MB): peak = 1040.789 ; gain = 831.234
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1055.859 ; gain = 845.680
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -331,25 +433,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:49 ; elapsed = 00:01:53 . Memory (MB): peak = 1040.789 ; gain = 831.234
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1055.859 ; gain = 845.680
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:49 ; elapsed = 00:01:53 . Memory (MB): peak = 1040.789 ; gain = 831.234
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1055.859 ; gain = 845.680
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:49 ; elapsed = 00:01:54 . Memory (MB): peak = 1040.789 ; gain = 831.234
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1055.859 ; gain = 845.680
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:49 ; elapsed = 00:01:54 . Memory (MB): peak = 1040.789 ; gain = 831.234
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1055.859 ; gain = 845.680
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -365,40 +467,50 @@ Report Cell Usage:
 +------+-----+------+
 |      |Cell |Count |
 +------+-----+------+
-|1     |LUT2 |   602|
-|2     |LUT3 |   543|
-|3     |LUT4 |   648|
-|4     |LUT5 |   794|
-|5     |LUT6 |  1942|
+|1     |LUT2 |   493|
+|2     |LUT3 |   432|
+|3     |LUT4 |   778|
+|4     |LUT5 |   996|
+|5     |LUT6 |  2191|
 |6     |IBUF |   184|
 |7     |OBUF |    32|
 +------+-----+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |  4745|
-+------+---------+-------+------+
++------+---------+-------------------------+------+
+|      |Instance |Module                   |Cells |
++------+---------+-------------------------+------+
+|1     |top      |                         |  5106|
+|2     |  HN_1   |HiddenNeuron_approx2x2   |  1043|
+|3     |    MAC  |MAC_Aprrox2x2_7          |  1043|
+|4     |  HN_2   |HiddenNeuron_approx2x2_0 |   899|
+|5     |    MAC  |MAC_Aprrox2x2_6          |   899|
+|6     |  HN_3   |HiddenNeuron_approx2x2_1 |   999|
+|7     |    MAC  |MAC_Aprrox2x2_5          |   999|
+|8     |  HN_4   |HiddenNeuron_approx2x2_2 |   897|
+|9     |    MAC  |MAC_Aprrox2x2_4          |   897|
+|10    |  HN_5   |HiddenNeuron_approx2x2_3 |  1049|
+|11    |    MAC  |MAC_Aprrox2x2            |  1049|
+|12    |  MAC    |MAC_approx16_2x2         |     3|
++------+---------+-------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:49 ; elapsed = 00:01:54 . Memory (MB): peak = 1040.789 ; gain = 831.234
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1055.859 ; gain = 845.680
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:16 ; elapsed = 00:01:29 . Memory (MB): peak = 1040.789 ; gain = 373.008
-Synthesis Optimization Complete : Time (s): cpu = 00:01:49 ; elapsed = 00:01:54 . Memory (MB): peak = 1040.789 ; gain = 831.234
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 1055.859 ; gain = 365.230
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1055.859 ; gain = 845.680
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 184 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'NeuralNetw_approx' is not ideal for floorplanning, since the cellview 'NeuralNetw_approx' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-156 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+162 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:49 ; elapsed = 00:01:51 . Memory (MB): peak = 1040.789 ; gain = 818.051
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.runs/synth_1/NeuralNetw_approx.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1040.789 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Dec 31 03:12:26 2022...
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1055.859 ; gain = 832.684
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Bassem/Documents/GitHub/PLC Project/PLC_Project/PLC_Project.runs/synth_1/NeuralNetw_approx2x2.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1055.859 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 31 23:12:45 2022...
